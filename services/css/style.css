@@ -1,6 +1,6 @@
 body {
   font-family: "Barlow", sans-serif;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .custom-btn {
@@ -32,9 +32,56 @@ body {
   color: white;
 }
 
+.ServicesIcons {
+  padding-top: 80px;
+  background-color: #F9F9F9;
+}
+
+.ServicesIcons-card {
+  border: 0px;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+  background-color: #F9F9F9;
+  top: 0px;
+  z-index: 0;
+}
+.ServicesIcons-card:hover {
+  top: -10px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+  z-index: 2;
+}
 .ServicesIcons-card img {
   width: 40px;
   height: 30px;
+}
+
+.restaurantsList .left {
+  height: fit-content;
+}
+.restaurantsList .upper {
+  border-bottom: 2px solid rgb(234, 234, 234);
+}
+.restaurantsList .upper img {
+  width: 70px;
+  height: 70px;
+}
+.restaurantsList .lower p {
+  color: rgb(151, 151, 151);
+}
+
+.contact {
+  background-color: #F9F9F9;
+}
+.contact input {
+  height: 50px;
+}
+.contact .form-control:focus {
+  box-shadow: none;
+  border-color: rgb(228, 228, 228);
+}
+.contact textarea {
+  resize: none;
 }
 
 /*# sourceMappingURL=style.css.map */
