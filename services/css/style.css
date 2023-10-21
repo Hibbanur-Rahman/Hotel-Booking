@@ -73,6 +73,9 @@ body {
 .contact {
   background-color: #F9F9F9;
 }
+.contact p {
+  color: rgb(147, 142, 142);
+}
 .contact input {
   height: 50px;
 }
@@ -80,8 +83,22 @@ body {
   box-shadow: none;
   border-color: rgb(228, 228, 228);
 }
+.contact .form-control::placeholder {
+  color: rgb(176, 176, 176);
+}
 .contact textarea {
   resize: none;
+}
+
+footer {
+  padding: 80px 0;
+  background-color: #063c43;
+}
+
+footer button {
+  background-color: #1e83a8;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
