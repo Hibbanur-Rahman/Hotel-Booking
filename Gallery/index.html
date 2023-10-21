@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Playfair+Display:wght@700&family=Roboto+Slab:wght@200;300&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--================= Navbar Section Start ==================-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary z-3">
+            <div class="container">
+                <div class="d-flex align-content-center">
+                    <a class="" href="#">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                    <div class="dropdown-center">
+                        <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            | EN
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Urdu</a></li>
+                            <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#room">Room</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="me-2 border-1 border-dark border-opacity-10 rounded bg-transparent px-2"
+                            type="submit">
+                            <i class="bi bi-cart" style="color:#2596be"></i>
+                        </button>
+                        <button class="custom-btn" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!--================= Banner Section Start ==================-->
+
+        <div class="banner container-fluid text-center d-flex align-items-center justify-content-center">
+            <h1 class=" border-2 border-bottom border-white">GALLERY</h1>
+        </div>
+
+        <!--================= gallery section start Section Start ==================-->
+
+        <div class="gallery-nav"></div>
+
+        <div class="Gallerylisting container-sm pt-5 pb-5">
+            <div class="row pt-5 pb-5 justify-content-between">
+                <div class="left col-sm-7 col-12 overflow-hidden rounded-4">
+                    <div class="hoverSlide row position-absolute"> 
+                        <i class="bi bi-plus-lg border border-2 border-white text-white p-0 d-flex justify-content-center align-items-center"></i>
+                    </div> 
+                    <img src="./images/gallery-font-exterior-01.jpg" alt="" >
+                </div>
+                <div class="right col-sm-5 col-12">
+                    <div class="upper col-12 pb-2">
+                        <img src="./images/gallery-font-exterior-02.jpg" alt="">
+                    </div>
+                    <div class="lower col-12 pt-3">
+                        <img src="./images/gallery-font-exterior-03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-5 justify-content-between ">
+                <div class="left col-sm-6  col-12 overflow-hidden rounded-4">
+                    <div class="hoverSlide row position-absolute"> 
+                        <i class="bi bi-plus-lg border border-2 border-white text-white p-0 d-flex justify-content-center align-items-center"></i>
+                    </div> 
+                    <img src="./images/gallery-font-exterior-05.jpg" alt="" style="height: auto;">
+                </div>
+                <div class="right col-sm-6  col-12">
+                    <div class="upper col-12 pb-2">
+                        <img src="./images/gallery-font-exterior-04.jpg" alt="">
+                    </div>
+                    <div class="lower col-12 pt-3">
+                        <img src="./images/gallery-font-exterior-06.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row overflow-hidden">
+                <div class="col-12 col-sm-4">
+                    <img src="./images/gallery-font-exterior-07.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img src="./images/gallery-font-exterior-08.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img src="./images/gallery-font-exterior-09.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+         <!--================= Footer Section Start ==================-->
+         <footer class="container-fluid pt-5 pb-5">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <img src="images/logo.png " alt=" ">
+                        <div class="d-flex align-items-center mt-5 ">
+                            <i class="bi bi-envelope text-white pe-4 fs-4 "></i>
+                            <a href="mailto:haquedot@gmail.com "
+                                class="text-white text-decoration-none fs-6 ">hibbanrahmanhyt@gmail.com</a>
+                        </div>
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-telephone text-white pe-4 fs-4 "></i>
+                            <a href="callto:7502461630 " class="text-white text-decoration-none fs-6 ">9973152523</a>
+                        </div>
+                        <div class="d-flexalign-items-center mb-5 ">
+                            <i class="bi bi-house text-white pe-4 fs-4 "></i>
+                            <a href=" " class="text-white text-decoration-none fs-6 ">MANUU, Hyderabad</a>
+                        </div>
+                    </div>
+                    <div class="d-blck col-md-4 ">
+                        <h4 class="text-white ">
+                            USEFUL LINKS
+                        </h4>
+                        <div class="row ">
+                            <div class="d-block col-6 mt-5 ">
+                                <p class="text-white text-decoration-none fs-6 ">About Us</p>
+                                <p class="text-white text-decoration-none fs-6 ">Rooms</p>
+                                <p class="text-white text-decoration-none fs-6 ">Service</p>
+                            </div>
+                            <div class="d-block col-6 mt-5 mb-5 ">
+                                <p class="text-white text-decoration-none fs-6 ">Contact</p>
+                                <p class="text-white text-decoration-none fs-6 ">Gallery</p>
+                                <p class="text-white text-decoration-none fs-6 ">Blog</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h4 class="text-white ">
+                            STAY IN TOUCH
+                        </h4>
+                        <div class="input-group mt-5 ">
+                            <input type="text " class="form-control py-2 " placeholder="Enter your email "
+                                aria-label="Recipient 's username" aria-describedby="button-addon2">
+                            <button class="text-white border-0 px-4" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                        <div class="d-flex my-4">
+                            <a href="">
+                                <i class="bi bi-facebook text-white pe-4 fs-4"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-twitter-x text-white pe-4 fs-4"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram text-white pe-4 fs-4"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-youtube text-white pe-4 fs-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white border-1">
+                <div class="d-flex ">
+                    <i class="bi bi-c-circle text-white pe-2"></i>
+                    <p class="text-white">2023 HMZ. All Right Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
