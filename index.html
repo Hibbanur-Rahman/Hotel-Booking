@@ -23,7 +23,7 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Playfair+Display:wght@700&family=Roboto+Slab:wght@200;300&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
 
-    <title>Services</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
@@ -79,16 +79,71 @@
                             <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
+                    <div class="d-flex">
                         <button class="me-2 border-1 border-dark border-opacity-10 rounded bg-transparent px-2"
                             type="submit">
                             <i class="bi bi-cart" style="color:#2596be"></i>
                         </button>
-                        <button class="custom-btn" type="submit">Login</button>
-                    </form>
+                        <a href="./login/index.html"> <button class="custom-btn" >Login</button></a>
+                        
+                    </div>
                 </div>
             </div>
         </nav>
+
+        <!--================= Banner Section Start ==================-->
+        <div class="homeSection container">
+            <div class="row h-auto">
+                <div class="col-6 HomeBannerLeft">
+                    <p>Welcome home</p>
+                    <h1>Our world is your playground.</h1>
+                    <p>Make yourself at home in our very sophisticated guest rooms.</p>
+                </div>
+                <div class="col-6"></div>
+            </div>
+            <div class="HomeBannerDate row pt-4 pb-4 col-10 position-relative rounded-end-5 rounded-bottom-0">
+                <div class="col-3 border-end ps-3 pe-3">
+                    <div class="row  align-items-center">
+                        <i class="bi bi-calendar-date w-auto"></i>
+                        <p class="w-auto p-0 m-0">Check In</p>
+                    </div>
+                    <div class="row d-flex flex-row align-items-center">
+                        <input type="text" class="col-8" placeholder="DD-MM-YYYY" id="CheckIn">
+                        <i class="bi bi-chevron-down w-auto p-0 m-0"></i>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row  align-items-center">
+                        <i class="bi bi-calendar-date w-auto"></i>
+                        <p class="w-auto p-0 m-0">Check In</p>
+                    </div>
+                    <div class="row d-flex flex-row">
+                        <input type="text" class="col-10" placeholder="DD-MM-YYYY" id="CheckIn">
+                        <i class="bi bi-chevron-down w-auto"></i>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row  align-items-center">
+                        <i class="bi bi-calendar-date w-auto"></i>
+                        <p class="w-auto p-0 m-0">Check In</p>
+                    </div>
+                    <div class="row d-flex flex-row">
+                        <input type="text" class="col-10" placeholder="DD-MM-YYYY" id="CheckIn">
+                        <i class="bi bi-chevron-down w-auto"></i>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row  align-items-center">
+                        <i class="bi bi-calendar-date w-auto"></i>
+                        <p class="w-auto p-0 m-0">Check In</p>
+                    </div>
+                    <div class="row d-flex flex-row">
+                        <input type="text" class="col-10" placeholder="DD-MM-YYYY" id="CheckIn">
+                        <i class="bi bi-chevron-down w-auto"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

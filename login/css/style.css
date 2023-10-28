@@ -1,0 +1,52 @@
+.custom-btn {
+    background-color: #2596be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.custom-btn:hover {
+    background-color: #063c43;
+    color: #fff;
+}
+
+.btn-class {
+    background-color: #2595be1a;
+    color: #2596be;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn-class:hover {
+    color: #2596be;
+}
+
+.login .active {
+    background-color: #2596be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.login .active:hover {
+    color: #fff;
+}
+
+.card {
+    background: #ffffffcc;
+    backdrop-filter: blur(30px);
+    margin-top: -100px;
+    max-width: 600px;
+}
