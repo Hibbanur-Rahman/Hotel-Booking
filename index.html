@@ -22,6 +22,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Playfair+Display:wght@700&family=Roboto+Slab:wght@200;300&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" id="google-fonts-1-css"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.3.2"
+        type="text/css" media="all">
 
     <title>Home</title>
     <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
@@ -30,7 +33,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <!--================= Navbar Section Start ==================-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary z-3">
             <div class="container">
@@ -84,25 +87,26 @@
                             type="submit">
                             <i class="bi bi-cart" style="color:#2596be"></i>
                         </button>
-                        <a href="./login/index.html"> <button class="custom-btn" >Login</button></a>
-                        
+                        <a href="./login/index.html"> <button class="custom-btn">Login</button></a>
+
                     </div>
                 </div>
             </div>
         </nav>
 
         <!--================= Banner Section Start ==================-->
-        <div class="homeSection container">
-            <div class="row h-auto">
-                <div class="col-6 HomeBannerLeft">
-                    <p>Welcome home</p>
-                    <h1>Our world is your playground.</h1>
-                    <p>Make yourself at home in our very sophisticated guest rooms.</p>
+        <div class="homeSection container p-0 rounded-4">
+            <div class="row h-auto p-0 m-0">
+                <div class="col-6 HomeBannerLeft p-5">
+                    <p class="">Welcome home</p>
+                    <h1 class="w-75">Our world is your playground.</h1>
+                    <p class="w-75 mt-4">Make yourself at home in our very sophisticated guest rooms.</p>
                 </div>
                 <div class="col-6"></div>
             </div>
-            <div class="HomeBannerDate row pt-4 pb-4 col-10 position-relative rounded-end-5 rounded-bottom-0">
-                <div class="col-3 border-end ps-3 pe-3">
+            <div class="HomeBannerDate row ms-0 col-8 position-relative rounded-end-5 rounded-bottom-0 overflow-hidden">
+
+                <div class="col-3 border-end ps-5 pe-0 mt-4 mb-4">
                     <div class="row  align-items-center">
                         <i class="bi bi-calendar-date w-auto"></i>
                         <p class="w-auto p-0 m-0">Check In</p>
@@ -112,38 +116,66 @@
                         <i class="bi bi-chevron-down w-auto p-0 m-0"></i>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 border-end ps-5 pe-0 mt-4 mb-4">
                     <div class="row  align-items-center">
                         <i class="bi bi-calendar-date w-auto"></i>
                         <p class="w-auto p-0 m-0">Check In</p>
                     </div>
-                    <div class="row d-flex flex-row">
-                        <input type="text" class="col-10" placeholder="DD-MM-YYYY" id="CheckIn">
-                        <i class="bi bi-chevron-down w-auto"></i>
+                    <div class="row d-flex flex-row align-items-center">
+                        <input type="text" class="col-8" placeholder="DD-MM-YYYY" id="CheckIn">
+                        <i class="bi bi-chevron-down w-auto p-0 m-0"></i>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 border-end ps-5 pe-0 mt-4 mb-4">
                     <div class="row  align-items-center">
                         <i class="bi bi-calendar-date w-auto"></i>
                         <p class="w-auto p-0 m-0">Check In</p>
                     </div>
-                    <div class="row d-flex flex-row">
-                        <input type="text" class="col-10" placeholder="DD-MM-YYYY" id="CheckIn">
-                        <i class="bi bi-chevron-down w-auto"></i>
+                    <div class="row d-flex flex-row align-items-center">
+                        <input type="text" class="col-8" placeholder="DD-MM-YYYY" id="CheckIn">
+                        <i class="bi bi-chevron-down w-auto p-0 m-0"></i>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="row  align-items-center">
-                        <i class="bi bi-calendar-date w-auto"></i>
-                        <p class="w-auto p-0 m-0">Check In</p>
-                    </div>
-                    <div class="row d-flex flex-row">
-                        <input type="text" class="col-10" placeholder="DD-MM-YYYY" id="CheckIn">
-                        <i class="bi bi-chevron-down w-auto"></i>
-                    </div>
+                <div class="col-3 p-0">
+                    <button
+                        class="btn btn-lg h-100 w-100 border-0 position-relative rounded-0 text-light d-flex align-items-center p-0 justify-content-center">
+                        <p class="mb-0 w-50">Check Availability</p>
+                    </button>
                 </div>
             </div>
         </div>
+
+        <!--================= count Section Start ==================-->
+        <div class="container p-5">
+            <div class="row m-0 p-5">
+                <div class="counter card col-4 text-center justify-content-center">
+                    <h1>20+</h1>
+                    <p>VARIOUS SERVICES</p>
+                </div>
+                <div class="counter card col-4 text-center justify-content-center">
+                    <h1>150+</h1>
+                    <p>DIFFERENT ROOMS</p>
+                </div>
+                <div class="counter card col-4 text-center justify-content-center">
+                    <h1>15+</h1>
+                    <p>EXPERIENCE</p>
+                </div>
+            </div>
+        </div>
+
+        <!--================= Beach Section Start ==================-->
+
+        <div class="container Beach d-flex flex-column align-items-center justify-content-center p-5 rounded-4">
+            <div class="upper row text-center col-7 align-items-center justify-content-center p-5 mt-5">
+                <h1>Beach Hotel More than a stay</h1>
+                <p>we have a lot of effort to bring more quality time to you and the people you love.you will have a chance to enjoy meaningful moments together and that's reason why we're here</p>
+                <img src="./images/signture2.png" alt="">
+            </div>
+            <div class="position-relative col-9 lower d-flex align-items-center justify-content-center rounded-4 mt-5">
+                <i class="bi bi-play-circle-fill"></i>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

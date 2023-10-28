@@ -39,22 +39,90 @@ body {
   font-size: 25px;
   cursor: pointer;
 }
+.homeSection h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
 
 .HomeBannerLeft {
   height: 90vh;
   background-color: rgba(255, 255, 255, 0.632);
   backdrop-filter: blur(16px);
-  box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+  padding-top: 20vh !important;
+  box-sizing: border-box;
+}
+.HomeBannerLeft p:nth-child(1) {
+  color: #2596be;
+}
+.HomeBannerLeft p:nth-child(3) {
+  color: rgba(0, 0, 0, 0.619);
 }
 
 .HomeBannerDate {
-  margin-top: -146px;
+  margin-top: -140px;
   background-color: white;
-  box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  height: 20vh;
 }
 .HomeBannerDate .bi-chevron-down {
   font-size: 15px;
   color: rgba(22, 22, 22, 0.6196078431);
+}
+.HomeBannerDate button {
+  background-color: #2596be;
+}
+.HomeBannerDate button:hover {
+  background-color: #076f95;
+}
+
+.counter {
+  height: 25vh;
+  border: 0px;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+  background-color: #ffffff;
+  top: 0px;
+  z-index: 0;
+}
+.counter:hover {
+  top: -10px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+  z-index: 2;
+}
+.counter:hover h1 {
+  color: #076f95;
+}
+.counter h1 {
+  transition: all 0.4s ease-in-out;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 48px;
+}
+.counter p {
+  font-weight: 550;
+  color: rgba(65, 64, 64, 0.7490196078);
+}
+
+.Beach {
+  background-color: aliceblue;
+}
+.Beach .upper img {
+  width: 150px;
+  height: 80px;
+}
+.Beach .lower {
+  height: 75vh;
+  background-image: url("../images/overlay-video-home3.jpg");
+  background-size: cover;
+  margin-bottom: -30vh;
+}
+.Beach .lower i {
+  font-size: 60px;
+}
+.Beach .lower i:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
