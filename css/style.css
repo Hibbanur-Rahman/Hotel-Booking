@@ -125,4 +125,61 @@ body {
   color: white;
 }
 
+.FavouriteRooms {
+  background-color: rgba(245, 245, 245, 0.6862745098);
+  margin-top: 40vh !important;
+  padding-top: 20vh !important;
+}
+.FavouriteRooms img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.owl-nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  /* top: calc(50% - 40px); */
+  cursor: url("../images/circle.svg"), move;
+  margin-left: 50px;
+  z-index: 1;
+  font-size: 30px !important;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  /* top: calc(50% - 40px); */
+  margin-right: 50px;
+  z-index: 1;
+  font-size: 30px !important;
+}
+.owl-nav i {
+  color: #063c43;
+}
+.owl-nav i:hover {
+  color: #1e83a8;
+}
+
+.carousel-indicators {
+  margin-bottom: -40px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #2596be;
+}
+
 /*# sourceMappingURL=style.css.map */
