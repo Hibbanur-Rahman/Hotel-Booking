@@ -187,3 +187,45 @@ body {
 }
 
 
+.services{
+    
+    .serviceHead{
+        p{
+            color:#076f95;
+        }
+        i{
+           font-size: 40px;
+           color: #076f95;
+        }
+       
+    }
+    .active{
+        background-color: rgba(232, 232, 232, 0.381);
+        transition: all 0.5s ease-in-out;
+    }
+    .card:hover{
+        background-color: rgba(232, 232, 232, 0.381);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    .iconImage{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .Gallerylisting {
+        .left {
+            img {
+                width: 100%;
+                height: 95vh;
+                transition: opacity 0.3s;
+                position: relative;
+            }
+        }
+        .right img {
+            width: 100%;
+        }
+    }
+    
+}
