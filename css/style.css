@@ -4,18 +4,58 @@ body {
 }
 
 .custom-btn {
-  background-color: #e8e8e8;
+  background-color: #2596be;
+  color: #fff;
   border: none;
-  border-radius: 8px;
-  padding: 10px 14px;
+  border-radius: 5px;
+  padding: 10px 18px;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 500;
 }
 
+.custom-btn:hover {
+  background-color: #063c43;
+  color: #fff;
+}
+
+.read-btn {
+  font-family: Poppins;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #808080;
+}
+
+.read-btn:hover {
+  background-color: #1e83a8;
+  color: #fff;
+}
+
+.offcanvas {
+  flex-direction: row;
+}
+
 .nav-link {
   font-family: Poppins;
   font-weight: 400;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #1e83a8;
+}
+
+.nav-link:hover {
+  color: #1e83a8;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
 }
 
 .container-fluid {
@@ -182,6 +222,12 @@ body {
   background-color: #2596be;
 }
 
+.services .active {
+  display: flex !important;
+}
+.services .hide {
+  display: none !important;
+}
 .services .serviceHead p {
   color: #076f95;
 }
@@ -189,7 +235,7 @@ body {
   font-size: 40px;
   color: #076f95;
 }
-.services .active {
+.services .activeCst {
   background-color: rgba(232, 232, 232, 0.381);
   transition: all 0.5s ease-in-out;
 }
@@ -210,6 +256,44 @@ body {
 }
 .services .Gallerylisting .right img {
   width: 100%;
+}
+.services button h4 {
+  font-size: 15px !important;
+  text-align: justify;
+}
+
+.testimonial .client img {
+  width: 50px !important;
+  height: 50px;
+  border-radius: 50%;
+}
+.testimonial .card {
+  box-shadow: 18px 27px 32px 8px rgba(0, 0, 0, 0.06);
+}
+.testimonial i {
+  font-size: 60px;
+  color: #076f95;
+}
+
+footer {
+  padding: 80px 0 !important;
+  background-color: #063c43;
+}
+
+footer button {
+  background-color: #1e83a8;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (max-width: 995px) {
+  .offcanvas {
+    flex-direction: column;
+  }
+  .overflow-y-auto {
+    border: 1px solid #808080;
+    max-height: 512px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

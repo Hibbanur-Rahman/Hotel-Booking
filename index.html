@@ -38,7 +38,7 @@
 <body>
     <div class="container-fluid ">
         <!--================= Navbar Section Start ==================-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary z-3">
+        <nav class="navbar navbar-expand-lg position-fixed z-3 bg-white border-bottom w-100">
             <div class="container">
                 <div class="d-flex align-content-center">
                     <a class="" href="#">
@@ -56,13 +56,17 @@
                         </ul>
                     </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  </button>
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <a class="" href="#">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav px-3 justify-content-center w-100">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
@@ -82,7 +86,7 @@
                             <a class="nav-link" href="./Gallery/index.html">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
+                            <a class="nav-link" href="./contact/index.html">Contact Us</a>
                         </li>
                     </ul>
                     <div class="d-flex">
@@ -91,7 +95,6 @@
                             <i class="bi bi-cart" style="color:#2596be"></i>
                         </button>
                         <a href="./login/index.html"> <button class="custom-btn">Login</button></a>
-
                     </div>
                 </div>
             </div>
@@ -171,7 +174,8 @@
         <div class="container Beach d-flex flex-column align-items-center justify-content-center p-5 rounded-4">
             <div class="upper row text-center col-7 align-items-center justify-content-center p-5 mt-5">
                 <h1>Beach Hotel More than a stay</h1>
-                <p>we have a lot of effort to bring more quality time to you and the people you love.you will have a chance to enjoy meaningful moments together and that's reason why we're here</p>
+                <p>we have a lot of effort to bring more quality time to you and the people you love.you will have a
+                    chance to enjoy meaningful moments together and that's reason why we're here</p>
                 <img src="./images/signture2.png" alt="">
             </div>
             <div class="position-relative col-9 lower d-flex align-items-center justify-content-center rounded-4 mt-5">
@@ -185,25 +189,28 @@
                 <h1 class="col-10 fs-2">OUR FAVORITE ROOMS</h1>
             </div>
             <div class="slider mb-4 position-relative mt-5 mb-5">
-                <div class="owl-carousel">
+                <div class="owl-carousel" id="rooms">
                     <div class="slider-card m-3 rounded-2">
-                        <div class="d-flex justify-content-center align-items-center mb-4 rounded-4 overflow-hidden p-0">
+                        <div
+                            class="d-flex justify-content-center align-items-center mb-4 rounded-4 overflow-hidden p-0">
                             <img src="./images/slider-1.jpg" alt="" class="rounded-4 h-100 w-100">
                         </div>
                     </div>
                     <div class="slider-card m-3">
-                        <div class="d-flex justify-content-center align-items-center mb-4 rounded-4 overflow-hidden p-0">
+                        <div
+                            class="d-flex justify-content-center align-items-center mb-4 rounded-4 overflow-hidden p-0">
                             <img src="./images/slider-2.jpg" alt="" class="rounded-4 h-100 w-100">
                         </div>
                     </div>
                     <div class="slider-card m-3">
-                        <div class="d-flex justify-content-center align-items-center mb-4 rounded-4 overflow-hidden p-0">
+                        <div
+                            class="d-flex justify-content-center align-items-center mb-4 rounded-4 overflow-hidden p-0">
                             <img src="./images/slider-3.jpg" alt="" class="rounded-4 h-100 w-100">
                         </div>
                     </div>
                 </div>
             </div>
-           
+
         </div>
 
         <!--================= Our Services Section Start ==================-->
@@ -216,7 +223,7 @@
                 </div>
             </div>
             <div class="row pt-5">
-                <div class="active card col-3 d-flex flex-row justify-content-around p-4 border-0">
+                <div class="activeCst card col-3 d-flex flex-row justify-content-around p-4 border-0" id="spaTab">
                     <div class="iconImage col-2">
                         <img src="./images/spa-icon.png" alt="">
                     </div>
@@ -225,7 +232,7 @@
                         <p class="p-0 m-0">Open Daily</p>
                     </div>
                 </div>
-                <div class=" card col-3 d-flex flex-row justify-content-around p-4 border-0">
+                <div class=" card col-3 d-flex flex-row justify-content-around p-4 border-0" id="restaurantTab">
                     <div class="iconImage col-2">
                         <img src="./images/crossed-knife-and-fork-svgrepo-com.svg" alt="">
                     </div>
@@ -234,7 +241,8 @@
                         <p class="p-0 m-0">Breakfast & Dinner</p>
                     </div>
                 </div>
-                <div class="card col-3 d-flex flex-row justify-content-around p-4 border-0 align-items-center">
+                <div class="card col-3 d-flex flex-row justify-content-around p-4 border-0 align-items-center"
+                    id="suitesTab">
                     <div class="iconImage col-2">
                         <img src="./images/suitecase-icon-01-1536x1335.png" alt="">
                     </div>
@@ -243,7 +251,7 @@
                         <p class="p-0 m-0">Cool View</p>
                     </div>
                 </div>
-                <div class="card col-3 d-flex flex-row justify-content-around p-4 border-0">
+                <div class="card col-3 d-flex flex-row justify-content-around p-4 border-0" id="swimmingTab">
                     <div class="iconImage col-2">
                         <img src="./images/swimmer.png" alt="">
                     </div>
@@ -252,13 +260,12 @@
                         <p class="p-0 m-0">Open Daily</p>
                     </div>
                 </div>
-               
             </div>
 
-            <div class="Gallerylisting container-sm p-0 pt-5 pb-5">
-                <div class="row pt-5 pb-5 justify-content-between">
+            <div class="Gallerylisting container-sm p-0 pt-5 pb-5" id="nav-tabContent">
+                <div class="active row pt-5 pb-5 justify-content-between d-flex" tabindex="0" id="spa">
                     <div class="left col-sm-4 col-12 overflow-hidden rounded-4">
-                        <img src="./images//services-gallery-1.jpg" alt="" >
+                        <img src="./images//services-gallery-1.jpg" alt="">
                     </div>
                     <div class="right col-sm-8 col-12">
                         <div class="upper col-12 pb-2">
@@ -274,8 +281,226 @@
                         </div>
                     </div>
                 </div>
+                <div class="row pt-5 pb-5 justify-content-between d-flex" tabindex="1" id="restaurant">
+                    <div class="left col-sm-4 col-12 overflow-hidden rounded-4">
+                        <img src="./images/services-restaurants-1.jpg" alt="">
+                    </div>
+                    <div class="right col-sm-8 col-12">
+                        <div class="upper col-12 pb-2">
+                            <img src="./images/services-restaurants-2.jpg" alt="">
+                        </div>
+                        <div class="lower row pt-3">
+                            <div class="col-6">
+                                <img src="./images/services-restaurants-3.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="./images/services-restaurants-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 pb-5 justify-content-between d-flex" tabindex="2" id="suites">
+                    <div class="left col-sm-4 col-12 overflow-hidden rounded-4">
+                        <img src="./images/services-suites-1.jpg" alt="">
+                    </div>
+                    <div class="right col-sm-8 col-12">
+                        <div class="upper col-12 pb-2">
+                            <img src="./images/services-suites-2.jpg" alt="">
+                        </div>
+                        <div class="lower row pt-3">
+                            <div class="col-6">
+                                <img src="./images/services-suites-3.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="./images/services-suites-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 pb-5 justify-content-between d-flex" tabindex="3" id="swimming">
+                    <div class="left col-sm-4 col-12 overflow-hidden rounded-4">
+                        <img src="./images/services-swimming-1.jpg" alt="">
+                    </div>
+                    <div class="right col-sm-8 col-12">
+                        <div class="upper col-12 pb-2">
+                            <img src="./images/services-swimming-2.jpg" alt="">
+                        </div>
+                        <div class="lower row pt-3">
+                            <div class="col-6">
+                                <img src="./images/services-swimming-3.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="./images/services-swimming-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>    
+        </div>
+
+
+        
+
+        <!--================= Testimonial Section Start ==================-->
+        <div class="testimonial container">
+            <h1>OUR GUESTS LOVE US</h1>
+            <div class="slider position-relative pt-5">
+                <div class=" slide-testimonials owl-carousel owl-theme owl-loaded owl-drag" id="testimonial_slider">
+                    <div class="owl-stage-outer">
+                        <div class="pb-5 owl-stage pt-5"
+                            style="transform: translate3d(-2166px, 0px, 0px); transition: all 0.5s ease 0s; width: 4334px;">
+                            <div class="card owl-item cloned border border-0 p-4 pb-2 pt-2" style="width: 403.333px;">
+                                <div class="item">
+                                    <div class="client_info">
+
+                                        <p class="evaluate">
+                                            "I will be pet i will be pet and then i will hiss sit in box get scared by
+                                            doggo also cucumerro yet the best thing in the call universe is a cardboard
+                                            box." </p>
+
+                                        <div class="row p-0 m-0 d-flex justify-content-between">
+                                            <div class="info d-flex  col-7">
+
+                                                <div class="client">
+                                                    <img decoding="async"
+                                                        src="https://demo.ovatheme.com/hotelft/wp-content/uploads/2022/01/team01.jpg"
+                                                        alt="Ralph Edwards">
+                                                </div>
+                                                <div class="name-job ps-2">
+
+                                                    <p class="name second_font m-0 p-0">
+                                                        Ralph Edwards </p>
+
+                                                    <p class="job m-0 p-0">
+                                                        American </p>
+                                                </div>
+
+                                            </div><!-- end info -->
+                                            <div class="icon-quote col-3">
+                                                <i class="bi bi-quote"></i>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card owl-item cloned border border-0 p-4 pb-2 pt-2" style="width: 403.333px;">
+                                <div class="item">
+                                    <div class="client_info">
+
+                                        <p class="evaluate">
+                                            "I will be pet i will be pet and then i will hiss sit in box get scared by
+                                            doggo also cucumerro yet the best thing in the call universe is a cardboard
+                                            box." </p>
+
+                                        <div class="row p-0 m-0 d-flex justify-content-between">
+                                            <div class="info d-flex  col-7">
+
+                                                <div class="client">
+                                                    <img decoding="async"
+                                                        src="https://demo.ovatheme.com/hotelft/wp-content/uploads/2022/01/team01.jpg"
+                                                        alt="Ralph Edwards">
+                                                </div>
+                                                <div class="name-job ps-2">
+
+                                                    <p class="name second_font m-0 p-0">
+                                                        Ralph Edwards </p>
+
+                                                    <p class="job m-0 p-0">
+                                                        American </p>
+                                                </div>
+
+                                            </div><!-- end info -->
+                                            <div class="icon-quote col-3">
+                                                <i class="bi bi-quote"></i>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+                                aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                            class="owl-next"><span aria-label="Next">›</span></button></div>
+                    <div class="owl-dots"><button role="button" class="owl-dot active"
+                            title="Dots"><span></span></button><button role="button" class="owl-dot"
+                            title="Dots"><span></span></button></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--================= Footer Section Start ==================-->
+        <footer class="container-fluid ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <img src="images/logo.png " alt=" ">
+                        <div class="d-flex align-items-center mt-5 ">
+                            <i class="bi bi-envelope text-white pe-4 fs-4 "></i>
+                            <a href="mailto:haquedot@gmail.com " class="text-white text-decoration-none fs-6 ">haquedot@gmail.com</a>
+                        </div>
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-telephone text-white pe-4 fs-4 "></i>
+                            <a href="callto:7502461630 " class="text-white text-decoration-none fs-6 ">7502461630</a>
+                        </div>
+                        <div class="d-flexalign-items-center mb-5 ">
+                            <i class="bi bi-house text-white pe-4 fs-4 "></i>
+                            <a href=" " class="text-white text-decoration-none fs-6 ">MANUU, Hyderabad</a>
+                        </div>
+                    </div>
+                    <div class="d-blck col-md-4 ">
+                        <h4 class="text-white ">
+                            USEFUL LINKS
+                        </h4>
+                        <div class="row ">
+                            <div class="d-block col-6 mt-5 ">
+                                <p class="text-white text-decoration-none fs-6 ">About Us</p>
+                                <p class="text-white text-decoration-none fs-6 ">Rooms</p>
+                                <p class="text-white text-decoration-none fs-6 ">Service</p>
+                            </div>
+                            <div class="d-block col-6 mt-5 mb-5 ">
+                                <p class="text-white text-decoration-none fs-6 ">Contact</p>
+                                <p class="text-white text-decoration-none fs-6 ">Gallery</p>
+                                <p class="text-white text-decoration-none fs-6 ">Blog</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h4 class="text-white ">
+                            STAY IN TOUCH
+                        </h4>
+                        <div class="input-group mt-5 ">
+                            <input type="text " class="form-control py-2 " placeholder="Enter your email " aria-label="Recipient 's username" aria-describedby="button-addon2">
+                            <button class="text-white border-0 px-4" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                        <div class="d-flex my-4">
+                            <a href="">
+                                <i class="bi bi-facebook text-white pe-4 fs-4"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-twitter-x text-white pe-4 fs-4"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram text-white pe-4 fs-4"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-youtube text-white pe-4 fs-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white border-1">
+                <div class="d-flex ">
+                    <i class="bi bi-c-circle text-white pe-2"></i>
+                    <p class="text-white">2023 HMZ. All Right Reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
