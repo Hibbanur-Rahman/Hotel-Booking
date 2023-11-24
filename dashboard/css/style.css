@@ -1,0 +1,134 @@
+.main {
+  height: 100vh !important;
+}
+
+.nav-item a:hover {
+  background-color: rgba(37, 149, 190, 0.1019607843);
+}
+
+.sidebar {
+  height: 100vh !important;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.sidebar h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.sidebar p {
+  font-size: 15px;
+}
+.sidebar .profileImg {
+  height: 70px;
+  width: 70px;
+  border-radius: 50% !important;
+}
+.sidebar .profileImg img {
+  height: 80px;
+  width: 80px;
+}
+
+.contents .upperNav {
+  border-bottom: 0.2px solid rgba(97, 20, 231, 0.34);
+}
+.contents .upperNav .left img {
+  width: 80px;
+  height: 80px;
+}
+.contents .upperNav .notification {
+  background-color: rgba(10, 70, 92, 0.1019607843);
+  height: 40px;
+  width: 40px;
+}
+.contents .upperNav .notification i {
+  color: white;
+}
+.contents .upperNav .notification div {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  box-sizing: border-box;
+  margin-top: -40px;
+  margin-right: -20px;
+}
+.contents .upperNav .notification div p {
+  font-size: 12px;
+}
+.contents .profileImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50% !important;
+}
+.contents .profileImg img {
+  height: 80px;
+  width: 80px;
+}
+.contents .breadcrumb {
+  background-color: rgba(10, 70, 92, 0.1019607843);
+}
+.contents .infoList {
+  padding-bottom: 200px !important;
+}
+.contents .infoList .card p:nth-child(1) {
+  color: grey;
+}
+.contents .infoList .card p:nth-child(2) {
+  font-weight: 600;
+  font-size: 23px;
+}
+.contents .infoList .icon {
+  height: 60px;
+  width: 60px;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.contents .infoList .icon i {
+  font-size: 25px;
+}
+.contents .infoList .icon:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+.contents .NotificationList .iconCheckbox {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(226, 226, 226);
+}
+.contents .NotificationList .iconCheckbox i {
+  font-size: 24px;
+  color: rgb(59, 59, 59);
+}
+.contents .NotificationList .icon {
+  width: 50px;
+  height: 50px;
+}
+.contents .NotificationList .card {
+  cursor: pointer;
+}
+.contents .NotificationList .card:hover {
+  background-color: rgba(84, 247, 231, 0.223);
+}
+.contents .NotificationList .card:hover .listCheckBox {
+  display: flex !important;
+}
+.contents .NotificationList .listCheckBox {
+  display: none !important;
+}
+
+.messageAlert i {
+  font-size: 25px;
+}
+
+.paymentDetails .btn {
+  height: 40px !important;
+  display: none !important;
+  transition: all 0.4s ease-in-out;
+}
+.paymentDetails .row {
+  cursor: pointer;
+}
+.paymentDetails .row:hover .btn {
+  display: flex !important;
+  transition: all 0.4s ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */
