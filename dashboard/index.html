@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Playfair+Display:wght@700&family=Roboto+Slab:wght@200;300&family=Roboto:wght@300;400&display=swap"
+            rel="stylesheet" />
+    
+        <title>userDashboard</title>
+    
+        <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Playfair+Display:wght@700&family=Roboto+Slab:wght@200;300&family=Roboto:wght@300;400&display=swap"
-        rel="stylesheet" />
-
-    <title>userDashboard</title>
-
-    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
-</head>
-
+        <!-- for the data tables -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    </head>
 <body>
-    <div class="main container-fluid d-flex m-0 p-0">
+
+    <div class="main container-fluid d-flex m-0 p-0 ">
         <div class="sidebar container-fluid d-flex flex-column flex-shrink-0 p-3 text-dark bg-white m-0 position-fixed"
             style="width: 300px">
             <div class="author row align-items-center text-dark text-decoration-none m-0">
@@ -85,8 +88,8 @@
             </ul>
         </div>
 
-        <div class="contents container-fluid m-0 p-0" style="margin-left: 300px !important">
-            <div class="heading row m-0 p-0 bg-primary pt-4 pb-1">
+        <div class="contents container-fluid m-0 p-0 " style="margin-left: 300px !important">
+            <div class="heading row m-0 p-0 bg-primary pt-4 pb-5">
                 <div class="upperNav row m-0 p-0 ps-3">
                     <div class="left row col-6 d-flex flex-row justify-content-start align-items-center">
                         <img src="./images/logo.png" alt="" />
@@ -109,7 +112,7 @@
                         <p class="p-0 m-0 ps-3 text-light">Hibbanur Rahman</p>
                     </div>
                 </div>
-                <div class="lowerNav row m-0 p-0 d-flex align-items-center p-4">
+                <div class="lowerNav row m-0 p-0 d-flex align-items-center p-4 pb-5">
                     <div class="col-6 d-flex align-items-center">
                         <h2 class="text-light p-0 m-0">My Booking</h2>
                     </div>
@@ -135,296 +138,173 @@
                     </div>
                 </div>
             </div>
-            <div class="infoList row m-0 p-3 pb-5 bg-primary">
-                <div class="col-3 p-3 pt-0 pb-0">
-                    <div
-                        class="TotalBooking card col-12 p-4 ps-1 bg-light d-flex flex-row align-items-center justify-content-center">
-                        <div class="icon bg-primary d-flex rounded-4 align-items-center justify-content-center">
-                            <i class="bi bi-cart text-light"></i>
-                        </div>
-                        <div class="col-7 ps-3">
-                            <p class="m-0">Total Booking</p>
-                            <p class="m-0">44</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 p-3 pt-0 pb-0">
-                    <div
-                        class="wishlist card col-12 p-4 ps-1 bg-light d-flex flex-row align-items-center justify-content-center">
-                        <div class="icon d-flex rounded-4 align-items-center justify-content-center"
-                            style="background-color: rgb(0, 207, 207)">
-                            <i class="bi bi-bookmark text-light"></i>
-                        </div>
-                        <div class="col-7 ps-3">
-                            <p class="m-0">Wishlist</p>
-                            <p class="m-0">15</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 p-3 pt-0 pb-0">
-                    <div
-                        class="TotalTravel card col-12 p-4 ps-1 bg-light d-flex flex-row align-items-center justify-content-center">
-                        <div class="icon d-flex rounded-4 align-items-center justify-content-center"
-                            style="background-color: rgb(244, 181, 6)">
-                            <i class="bi bi-airplane text-light"></i>
-                        </div>
-                        <div class="col-7 ps-3">
-                            <p class="m-0">Total Travel</p>
-                            <p class="m-0">25</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 p-3 pt-0 pb-0">
-                    <div
-                        class="Reviews card col-12 p-4 ps-1 bg-light d-flex flex-row align-items-center justify-content-center">
-                        <div class="icon d-flex rounded-4 align-items-center justify-content-center"
-                            style="background-color: rgb(159, 0, 207)">
-                            <i class="bi bi-star-fill text-light"></i>
-                        </div>
-                        <div class="col-7 ps-3">
-                            <p class="m-0">Reviews</p>
-                            <p class="m-0">20</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row m-0 p-3 position-relative" style="margin-top: -150px !important">
-                <div class="col-lg-6 responsive-column--m">
-                    <div class="form-box card bg-light p-4">
-                        <div class="form-title-wrap">
-                            <h3 class="title fs-4">Statics Results</h3>
-                        </div>
-                        <div class="form-content">
-                            <div class="chartjs-size-monitor">
-                                <div class="chartjs-size-monitor-expand">
-                                    <div class=""></div>
-                                </div>
-                                <div class="chartjs-size-monitor-shrink">
-                                    <div class=""></div>
-                                </div>
-                            </div>
-                            <canvas id="bar-chart" width="641" height="350"
-                                style="display: block; height: 256px; width: 513px"
-                                class="chartjs-render-monitor"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="NotificationList card bg-light">
-                        <div class="row m-0 p-0 justify-content-between p-3">
-                            <p class="justify-content-start col-10 fw-bold m-0 p-0">
-                                Notifications
-                            </p>
-                            <div class="iconCheckbox d-flex justify-content-center align-items-center rounded-2">
-                                <i class="bi bi-check2-square"></i>
-                            </div>
-                        </div>
-                        <div class="card row d-flex flex-row m-0 p-3 border border-bottom-0 border-start-0 border-end-0 rounded-0">
-                            <div
-                                class="col-2 icon bg-primary rounded-5 d-flex align-items-center justify-content-center">
-                                <i class="bi bi-bell text-light fs-5"></i>
-                            </div>
-                            <div class="col-9 ps-3">
-                                <p class="fw-bold m-0 fs-6">Group Trip - Available</p>
-                                <p class="p-0 m-0">2 min ago</p>
-                            </div>
-                            <div
-                                class="iconCheckbox listCheckBox d-flex justify-content-center align-items-center rounded-2 ms-4">
-                                <i class="bi bi-check2-square"></i>
-                            </div>
-                        </div>
-                        <div
-                            class="card row d-flex flex-row m-0 p-3 border border-bottom-0 border-start-0 border-end-0 rounded-0">
-                            <div
-                                class="col-2 icon bg-primary rounded-5 d-flex align-items-center justify-content-center">
-                                <i class="bi bi-bell text-light fs-5"></i>
-                            </div>
-                            <div class="col-9 ps-3">
-                                <p class="fw-bold m-0 fs-6">Group Trip - Available</p>
-                                <p class="p-0 m-0">2 min ago</p>
-                            </div>
-                            <div
-                                class="iconCheckbox listCheckBox d-flex justify-content-center align-items-center rounded-2 ms-4">
-                                <i class="bi bi-check2-square"></i>
-                            </div>
-                        </div>
-                        <div
-                            class="card row d-flex flex-row m-0 p-3 border border-bottom-0 border-start-0 border-end-0 rounded-0">
-                            <div
-                                class="col-2 icon bg-primary rounded-5 d-flex align-items-center justify-content-center">
-                                <i class="bi bi-bell text-light fs-5"></i>
-                            </div>
-                            <div class="col-9 ps-3">
-                                <p class="fw-bold m-0 fs-6">Group Trip - Available</p>
-                                <p class="p-0 m-0">2 min ago</p>
-                            </div>
-                            <div
-                                class="iconCheckbox listCheckBox d-flex justify-content-center align-items-center rounded-2 ms-4">
-                                <i class="bi bi-check2-square"></i>
-                            </div>
-                        </div>
-                        <div
-                            class="card row d-flex flex-row m-0 p-3 border border-bottom-0 border-start-0 border-end-0 rounded-0">
-                            <div
-                                class="col-2 icon bg-primary rounded-5 d-flex align-items-center justify-content-center">
-                                <i class="bi bi-bell text-light fs-5"></i>
-                            </div>
-                            <div class="col-9 ps-3">
-                                <p class="fw-bold m-0 fs-6">Group Trip - Available</p>
-                                <p class="p-0 m-0">2 min ago</p>
-                            </div>
-                            <div
-                                class="iconCheckbox listCheckBox d-flex justify-content-center align-items-center rounded-2 ms-4">
-                                <i class="bi bi-check2-square"></i>
-                            </div>
-                        </div>
-                        <div
-                            class="card row d-flex flex-row m-0 p-3 border border-bottom-0 border-start-0 border-end-0 rounded-0">
-                            <div
-                                class="col-2 icon bg-primary rounded-5 d-flex align-items-center justify-content-center">
-                                <i class="bi bi-bell text-light fs-5"></i>
-                            </div>
-                            <div class="col-9 ps-3">
-                                <p class="fw-bold m-0 fs-6">Group Trip - Available</p>
-                                <p class="p-0 m-0">2 min ago</p>
-                            </div>
-                            <div
-                                class="iconCheckbox listCheckBox d-flex justify-content-center align-items-center rounded-2 ms-4">
-                                <i class="bi bi-check2-square"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            <div class="bookingTable card m-5 p-3 border-0 position-relative">
+                <p class="fw-bold">Booking Results</p>
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tiger</td>
+                            <td>Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>320800</td>
+                        </tr>
+                        <tr>
+                            <td>Garrett</td>
+                            <td>Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>170750</td>
+                        </tr>
+                        <tr>
+                            <td>Ashton</td>
+                            <td>Cox</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>86000</td>
+                        </tr>
+                        <tr>
+                            <td>Cedric</td>
+                            <td>Kelly</td>
+                            <td>Senior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>433060</td>
+                        </tr>
+                        <tr>
+                            <td>Airi</td>
+                            <td>Satou</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>162700</td>
+                        </tr>
+                        <tr>
+                            <td>Brielle</td>
+                            <td>Williamson</td>
+                            <td>Integration Specialist</td>
+                            <td>New York</td>
+                            <td>372000</td>
+                        </tr>
+                        <tr>
+                            <td>Herrod</td>
+                            <td>Chandler</td>
+                            <td>Sales Assistant</td>
+                            <td>San Francisco</td>
+                            <td>137500</td>
+                        </tr>
+                        <tr>
+                            <td>Rhona</td>
+                            <td>Davidson</td>
+                            <td>Integration Specialist</td>
+                            <td>Tokyo</td>
+                            <td>327900</td>
+                        </tr>
+                        <tr>
+                            <td>Colleen</td>
+                            <td>Hurst</td>
+                            <td>Javascript Developer</td>
+                            <td>San Francisco</td>
+                            <td>205500</td>
+                        </tr>
+                        <tr>
+                            <td>Sonya</td>
+                            <td>Frost</td>
+                            <td>Software Engineer</td>
+                            <td>Edinburgh</td>
+                            <td>103600</td>
+                        </tr>
+                        <tr>
+                            <td>Jena</td>
+                            <td>Gaines</td>
+                            <td>Office Manager</td>
+                            <td>London</td>
+                            <td>90560</td>
+                        </tr>
+                        <tr>
+                            <td>Quinn</td>
+                            <td>Flynn</td>
+                            <td>Support Lead</td>
+                            <td>Edinburgh</td>
+                            <td>342000</td>
+                        </tr>
+                        <tr>
+                            <td>Charde</td>
+                            <td>Marshall</td>
+                            <td>Regional Director</td>
+                            <td>San Francisco</td>
+                            <td>470600</td>
+                        </tr>
+                        <tr>
+                            <td>Haley</td>
+                            <td>Kennedy</td>
+                            <td>Senior Marketing Designer</td>
+                            <td>London</td>
+                            <td>313500</td>
+                        </tr>
+                        <tr>
+                            <td>Tatyana</td>
+                            <td>Fitzpatrick</td>
+                            <td>Regional Director</td>
+                            <td>London</td>
+                            <td>385750</td>
+                        </tr>
+                        <tr>
+                            <td>Michael</td>
+                            <td>Silva</td>
+                            <td>Marketing Designer</td>
+                            <td>London</td>
+                            <td>198500</td>
+                        </tr>
+                        <tr>
+                            <td>Paul</td>
+                            <td>Byrd</td>
+                            <td>Chief Financial Officer (CFO)</td>
+                            <td>New York</td>
+                            <td>725000</td>
+                        </tr>
+                        <tr>
+                            <td>Gloria</td>
+                            <td>Little</td>
+                            <td>Systems Administrator</td>
+                            <td>New York</td>
+                            <td>237500</td>
+                        </tr>
+                        <tr>
+                            <td>Bradley</td>
+                            <td>Greer</td>
+                            <td>Software Engineer</td>
+                            <td>London</td>
+                            <td>132000</td>
+                        </tr>
+                        <tr>
+                            <td>Dai</td>
+                            <td>Rios</td>
+                            <td>Personnel Lead</td>
+                            <td>Edinburgh</td>
+                            <td>217500</td>
+                        </tr>
+                       
 
-            <div class="row m-0 p-3">
-                <div class="col-6 messageAlert">
-                    <div class="card p-3">
-                        <div class="taskHead pb-4">
-                            <p class="m-0 p-0 fw-bold">Tasks</p>
-                        </div>
-                        <div class="alert alert-success alert-dismissible fade show d-flex  align-items-center p-2 " role="alert">
-                            <i class="bi bi-check2 col-1"></i>
-                            <p class="m-0 p-0 col-8">Your booking <strong>Shimla to Goa</strong> has been done!</p>
-                            <button type="button" class="btn-close m-0" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                        <div class="alert alert-success alert-dismissible fade show d-flex  align-items-center p-2 " role="alert">
-                            <i class="bi bi-check2 col-1"></i>
-                            <p class="m-0 p-0 col-8">Your booking <strong>Shimla to Goa</strong> has been done!</p>
-                            <button type="button" class="btn-close m-0" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                        <div class="alert alert-success alert-dismissible fade show d-flex  align-items-center p-2 " role="alert">
-                            <i class="bi bi-check2 col-1"></i>
-                            <p class="m-0 p-0 col-8">Your booking <strong>Shimla to Goa</strong> has been done!</p>
-                            <button type="button" class="btn-close m-0" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                        <div class="alert alert-success alert-dismissible fade show d-flex  align-items-center p-2 " role="alert">
-                            <i class="bi bi-check2 col-1"></i>
-                            <p class="m-0 p-0 col-8">Your booking <strong>Shimla to Goa</strong> has been done!</p>
-                            <button type="button" class="btn-close m-0" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                        <div class="alert alert-success alert-dismissible fade show d-flex  align-items-center p-2 " role="alert">
-                            <i class="bi bi-check2 col-1"></i>
-                            <p class="m-0 p-0 col-8">Your booking <strong>Shimla to Goa</strong> has been done!</p>
-                            <button type="button" class="btn-close m-0" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                        <div class="alert alert-success alert-dismissible fade show d-flex  align-items-center p-2 " role="alert">
-                            <i class="bi bi-check2 col-1"></i>
-                            <p class="m-0 p-0 col-8">Your booking <strong>Shimla to Goa</strong> has been done!</p>
-                            <button type="button" class="btn-close m-0" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                        <div class="alert alert-success alert-dismissible fade show d-flex  align-items-center p-2 " role="alert">
-                            <i class="bi bi-check2 col-1"></i>
-                            <p class="m-0 p-0 col-8">Your booking <strong>Shimla to Goa</strong> has been done!</p>
-                            <button type="button" class="btn-close m-0" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card paymentDetails">
-                        <div class="ordersHead p-3 pb-4">
-                            <p class="p-0 fw-bold">Orders</p>
-                        </div>
-                        <div class="row m-0 p-3 border border-1 border-bottom-0 border-end-0 border-start-0 d-flex justify-content-between align-items-center">
-                            <div class="row m-0 p-0 col-8">
-                                <p class=" p-0 fw-bold w-auto">3-Night Bahamas- Miami Round-Trip</p>
-                                <div class="row m-0 p-0 w-auto">
-                                    <div class="paidInfo bg-success rounded-2 w-auto me-3 d-flex justify-content-center align-items-center">
-                                        <p class="p-0 m-0 text-light">Paid</p>
-                                    </div>
-                                    <p class="p-0 m-0 w-auto">Order: #232 Date: 11/05/2019</p>
-                                </div>
-                            </div>
-                           
-                            <button class="btn btn-outline-primary w-auto d-flex p-2 m-0">Veiw Invoice</button>
-
-                        </div>
-                        <div class="row m-0 p-3 border border-1 border-bottom-0 border-end-0 border-start-0 d-flex justify-content-between align-items-center">
-                            <div class="row m-0 p-0 col-8">
-                                <p class=" p-0 fw-bold w-auto">3-Night Bahamas- Miami Round-Trip</p>
-                                <div class="row m-0 p-0 w-auto">
-                                    <div class="paidInfo bg-success rounded-2 w-auto me-3 d-flex justify-content-center align-items-center">
-                                        <p class="p-0 m-0 text-light">Paid</p>
-                                    </div>
-                                    <p class="p-0 m-0 w-auto">Order: #232 Date: 11/05/2019</p>
-                                </div>
-                            </div>
-                           
-                            <button class="btn btn-outline-primary w-auto d-flex p-2 m-0">Veiw Invoice</button>
-
-                        </div>
-                        <div class="row m-0 p-3 border border-1 border-bottom-0 border-end-0 border-start-0 d-flex justify-content-between align-items-center">
-                            <div class="row m-0 p-0 col-8">
-                                <p class=" p-0 fw-bold w-auto">3-Night Bahamas- Miami Round-Trip</p>
-                                <div class="row m-0 p-0 w-auto">
-                                    <div class="paidInfo bg-danger rounded-2 w-auto me-3 d-flex justify-content-center align-items-center">
-                                        <p class="p-0 m-0 text-light">Unpaid</p>
-                                    </div>
-                                    <p class="p-0 m-0 w-auto">Order: #232 Date: 11/05/2019</p>
-                                </div>
-                            </div>
-                           
-                            <button class="btn btn-outline-primary w-auto d-flex p-2 m-0">complete Transaction</button>
-
-                        </div>
-                        <div class="row m-0 p-3 border border-1 border-bottom-0 border-end-0 border-start-0 d-flex justify-content-between align-items-center">
-                            <div class="row m-0 p-0 col-8">
-                                <p class=" p-0 fw-bold w-auto">3-Night Bahamas- Miami Round-Trip</p>
-                                <div class="row m-0 p-0 w-auto">
-                                    <div class="paidInfo bg-success rounded-2 w-auto me-3 d-flex justify-content-center align-items-center">
-                                        <p class="p-0 m-0 text-light">Paid</p>
-                                    </div>
-                                    <p class="p-0 m-0 w-auto">Order: #232 Date: 11/05/2019</p>
-                                </div>
-                            </div>
-                           
-                            <button class="btn btn-outline-primary w-auto d-flex p-2 m-0">Veiw Invoice</button>
-
-                        </div>
-                        <div class="row m-0 p-3 border border-1 border-bottom-0 border-end-0 border-start-0 d-flex justify-content-between align-items-center">
-                            <div class="row m-0 p-0 col-8">
-                                <p class=" p-0 fw-bold w-auto">3-Night Bahamas- Miami Round-Trip</p>
-                                <div class="row m-0 p-0 w-auto">
-                                    <div class="paidInfo bg-success rounded-2 w-auto me-3 d-flex justify-content-center align-items-center">
-                                        <p class="p-0 m-0 text-light">Paid</p>
-                                    </div>
-                                    <p class="p-0 m-0 w-auto">Order: #232 Date: 11/05/2019</p>
-                                </div>
-                            </div>
-                           
-                            <button class="btn btn-outline-primary w-auto d-flex p-2 m-0">Veiw Invoice</button>
-
-                        </div>
-                    </div>
-                </div>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+
     <script src="./js/script.js"></script>
 </body>
-
 </html>

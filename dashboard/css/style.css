@@ -131,4 +131,9 @@
   transition: all 0.4s ease-in-out;
 }
 
+.bookingTable {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  margin-top: -60px !important;
+}
+
 /*# sourceMappingURL=style.css.map */
