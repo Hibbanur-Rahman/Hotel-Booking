@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Playfair+Display:wght@700&family=Roboto+Slab:wght@200;300&family=Roboto:wght@300;400&display=swap"
+            rel="stylesheet" />
+    
+        <title>userDashboard</title>
+    
+        <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Playfair+Display:wght@700&family=Roboto+Slab:wght@200;300&family=Roboto:wght@300;400&display=swap"
-        rel="stylesheet" />
-
-    <title>userDashboard</title>
-
-    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
-
-    <!-- for the data tables -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-</head>
-
+        <!-- for the data tables -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    </head>
 <body>
 
     <div class="main container-fluid d-flex m-0 p-0 ">
@@ -52,8 +47,7 @@
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link active" aria-current="page">
-                        <!-- <i class="bi bi-speedometer2 me-2"></i> -->
-                        <i class="la la-dashboard"></i>
+                        <i class="bi bi-speedometer2 me-2"></i>
                         Dashboard
                     </a>
                 </li>
@@ -65,7 +59,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link text-dark">
-                        <i class="la la-user"></i>
+                        <i class="bi bi-person me-2"></i>
                         My Profile
                     </a>
                 </li>
@@ -144,17 +138,87 @@
                     </div>
                 </div>
             </div>
+            <div class="profileInfoCard card m-0  m-5 border-0 p-3">
+                <div class="row m-0 p-0 border border-bottom-1 border-top-0 border-start-0 border-end-0">
+                    <p class="fw-bold">Profile Information</p>
 
-            <div class="row m-0 p-0 ps-3">
-                <div class="col">
-                    <div class="card">
-                        <div class="row m-0 p-0">
-                             <h3 class="fs-5">Wishlist</h3>
-                             <p class="text-secondary">Showing 1-6 of 28 results</p>
-                        </div>
+                </div>
+                <div class="row m-0 p-0 border border-bottom-1 border-top-0 border-start-0 border-end-0 p-3 ps-0">
+                    <div class="col-3">
+                        <p class="fw-bold m-0">First Name</p>
                     </div>
+                    <div class="col-1">
+                        :
+                    </div>
+                    <div class="col-7">
+                        <p class="m-0">Hibban</p>
+                    </div>
+
                 </div>
                
+                <div class="row m-0 p-0 border border-bottom-1 border-top-0 border-start-0 border-end-0 p-3 ps-0">
+                    <div class="col-3">
+                        <p class="fw-bold m-0">Last Name</p>
+                    </div>
+                    <div class="col-1">
+                        :
+                    </div>
+                    <div class="col-7">
+                        <p class="m-0">Rahman</p>
+                    </div>
+
+                </div>
+                <div class="row m-0 p-0 border border-bottom-1 border-top-0 border-start-0 border-end-0 p-3 ps-0">
+                    <div class="col-3">
+                        <p class="fw-bold m-0">Email Address</p>
+                    </div>
+                    <div class="col-1">
+                        :
+                    </div>
+                    <div class="col-7">
+                        <p class="m-0">hibbanrahmanhyt@gmail.com</p>
+                    </div>
+
+                </div>
+                <div class="row m-0 p-0 border border-bottom-1 border-top-0 border-start-0 border-end-0 p-3 ps-0">
+                    <div class="col-3">
+                        <p class="fw-bold m-0">Phone Number</p>
+                    </div>
+                    <div class="col-1">
+                        :
+                    </div>
+                    <div class="col-7">
+                        <p class="m-0">+91-9973152523</p>
+                    </div>
+
+                </div>
+                <div class="row m-0 p-0 border border-bottom-1 border-top-0 border-start-0 border-end-0 p-3 ps-0">
+                    <div class="col-3">
+                        <p class="fw-bold m-0">Date of Birth</p>
+                    </div>
+                    <div class="col-1">
+                        :
+                    </div>
+                    <div class="col-7">
+                        <p class="m-0">11 Nov 2004</p>
+                    </div>
+
+                </div>
+                <div class="row m-0 p-0 border border-bottom-1 border-top-0 border-start-0 border-end-0 p-3 ps-0">
+                    <div class="col-3">
+                        <p class="fw-bold m-0">Address</p>
+                    </div>
+                    <div class="col-1">
+                        :
+                    </div>
+                    <div class="col-7">
+                        <p class="m-0">Gacchibowli,telecome nagar,hyderabad,telangana,500032</p>
+                    </div>
+
+                </div>
+                <div class="row m-0 p-4 ps-0 pb-0">
+                    <button class="btn btn-primary w-auto p-2">Edit Profile</button>
+                </div>
             </div>
         </div>
     </div>
@@ -163,8 +227,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/masking-input.js" data-autoinit="true"></script>
+
     <script src="./js/script.js"></script>
 </body>
-
 </html>
