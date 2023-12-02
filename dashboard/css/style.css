@@ -262,4 +262,33 @@
   cursor: pointer;
 }
 
+.pagenation div {
+  background-color: rgba(10, 70, 92, 0.1019607843);
+  transition: all 0.4s ease-in-out;
+}
+.pagenation div:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: #0964b0;
+  cursor: pointer;
+}
+.pagenation div:hover p {
+  color: rgb(246, 243, 243) !important;
+}
+.pagenation div:hover i {
+  color: white !important;
+}
+.pagenation div p {
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.mainReviewsList {
+  margin-top: -60px !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.mainReviewsList .reviewsItem img {
+  height: 80px;
+  width: 80px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Playfair+Display:wght@700&family=Roboto+Slab:wght@200;300&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet" />
+
+    <title>userDashboard</title>
+
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+
+    <!-- for the data tables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="main container-fluid d-flex m-0 p-0 ">
+        <div class="sidebar container-fluid d-flex flex-column flex-shrink-0 p-3 text-dark bg-white m-0 position-fixed"
+            style="width: 300px">
+            <div class="author row align-items-center text-dark text-decoration-none m-0">
+                <div class="profileImg rounded-5 overflow-hidden col-4 p-0 d-flex">
+                    <img src="./images/userImg.jpg" alt="" />
+                </div>
+                <div class="userDetils col-8 pe-0">
+                    <h5>Hibbanur Rahman</h5>
+                    <p class="p-0 m-0">Member Since Dec,2023</p>
+                </div>
+            </div>
+            <hr />
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                        <!-- <i class="bi bi-speedometer2 me-2"></i> -->
+                        <i class="la la-dashboard"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <i class="bi bi-cart2 me-2"></i>
+                        My Booking
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <i class="la la-user"></i>
+                        My Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <i class="bi bi-star-fill me-2"></i>
+                        My Reviews
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <i class="bi bi-suit-heart-fill me-2"></i>
+                        Wishlist
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <i class="bi bi-gear me-2"></i> Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark" style="--bs-icon-link-transform: rotate(45deg)">
+                        <i class="bi bi-power me-2"></i> Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contents container-fluid m-0 p-0 " style="margin-left: 300px !important">
+            <div class="heading row m-0 p-0 bg-primary pt-4 pb-5">
+                <div class="upperNav row m-0 p-0 ps-3">
+                    <div class="left row col-6 d-flex flex-row justify-content-start align-items-center">
+                        <img src="./images/logo.png" alt="" />
+                        <div class="search d-flex justify-content-end align-items-center col-8">
+                            <input type="text" class="form-control p-2" placeholder="search" />
+                            <i class="bi bi-search position-absolute me-3"></i>
+                        </div>
+                    </div>
+                    <div class="right col-6 d-flex justify-content-end align-items-center">
+                        <div class="notification rounded-5 p-2 d-flex align-items-center justify-content-center me-3">
+                            <i class="bi bi-bell p-0 m-0"></i>
+                            <div
+                                class="notificationCount bg-light p-1 d-flex align-items-center justify-content-center position-absolute">
+                                <p class="p-0 m-0">5</p>
+                            </div>
+                        </div>
+                        <div class="profileImg rounded-5 overflow-hidden col-4 p-0 d-flex">
+                            <img src="./images/userImg.jpg" alt="" />
+                        </div>
+                        <p class="p-0 m-0 ps-3 text-light">Hibbanur Rahman</p>
+                    </div>
+                </div>
+                <div class="lowerNav row m-0 p-0 d-flex align-items-center p-4 pb-5">
+                    <div class="col-6 d-flex align-items-center">
+                        <h2 class="text-light p-0 m-0">My Booking</h2>
+                    </div>
+                    <div class="breadcrumb_items col-6 d-flex align-items-center justify-content-end">
+                        <nav class="w-auto" style="
+                  --bs-breadcrumb-divider: url(
+                    &#34;data:image/svg + xml,
+                    %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+                  );
+                " aria-label="breadcrumb">
+                            <ol class="breadcrumb w-auto p-2 rounded-2 m-0">
+                                <li class="breadcrumb-item">
+                                    <a href="#" class="text-light">Home</a>
+                                </li>
+                                <li class="breadcrumb-item text-light" aria-current="page">
+                                    <a href="#" class="text-light">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active text-light" aria-current="page">
+                                    MyBooking
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-0 p-0 d-flex justify-content-center ps-3 pe-3">
+                <div class="col-12">
+                    <div class="card mainWishlist p-2 border-0 pb-4">
+                        <div class="row m-0 p-0 pb-4">
+                             <h3 class="fs-5">Wishlist</h3>
+                             <p class="text-secondary">Showing 1-6 of 28 results</p>
+                        </div>
+                        <div class="row m-0 p-0">
+                            <div class="col-4">
+                                <div class="row m-0 p-0">
+                                    <div class=" WishListItem card m-0 p-0 border-0">
+                                        <div class="upper col-12 m-0 p-0 rounded-2 overflow-hidden">
+                                            <div class="bestseller position-absolute w-auto bg-success rounded-pill p-2 ">
+                                                <p class="m-0 p-0 text-light w-auto">BESTSELLER</p>
+                                            </div>
+                                            <div class="addWishlist position-absolute  p-0 m-0">
+                                                <i class="la la-heart p-2 m-0 rounded-circle bg-light "></i>
+                                            </div>
+                                            <img src="./images/img1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="lower col-12 p-3">
+                                            <h3 class="fs-5 m-0 p-0">The Milennium Hilton New York</h3>
+                                            <p class="m-0 p-0 text-secondary">124 E Huron St,New york</p>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="w-auto bg-warning rounded-2 p-0 ps-1 pe-1">
+                                                    <p class="p-0 m-0 text-light"> 4.4/5</p>
+                                                </div>
+                                                <p class="w-auto m-0 p-0 text-warning ps-2">Average</p>
+                                                <p class="w-auto m-0 p-0 text-secondary ps-2">(30 Reviews)</p>
+                                            </div>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="col-6 p-0 m-0">
+                                                    <p class="m-0 p-0 w-auto text-secondary">From<strong class="text-dark fs-5 ps-1">$88.00</strong></p>
+                                                    <p class="m-0 p-0 text-secondary">Per night</p>
+                                                </div>
+                                                <div class="col-6 justify-content-end d-flex align-items-center">
+                                                    <p class="m-0 p-0 text-secondary">See details<i class="la la-angle-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-4">
+                                <div class="row m-0 p-0">
+                                    <div class=" WishListItem card m-0 p-0 border-0">
+                                        <div class="upper col-12 m-0 p-0 rounded-2 overflow-hidden">
+                                            <div class="bestseller position-absolute w-auto bg-success rounded-pill p-2 ">
+                                                <p class="m-0 p-0 text-light w-auto">BESTSELLER</p>
+                                            </div>
+                                            <div class="addWishlist position-absolute  p-0 m-0">
+                                                <i class="la la-heart p-2 m-0 rounded-circle bg-light "></i>
+                                            </div>
+                                            <img src="./images/img1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="lower col-12 p-3">
+                                            <h3 class="fs-5 m-0 p-0">The Milennium Hilton New York</h3>
+                                            <p class="m-0 p-0 text-secondary">124 E Huron St,New york</p>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="w-auto bg-warning rounded-2 p-0 ps-1 pe-1">
+                                                    <p class="p-0 m-0 text-light"> 4.4/5</p>
+                                                </div>
+                                                <p class="w-auto m-0 p-0 text-warning ps-2">Average</p>
+                                                <p class="w-auto m-0 p-0 text-secondary ps-2">(30 Reviews)</p>
+                                            </div>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="col-6 p-0 m-0">
+                                                    <p class="m-0 p-0 w-auto text-secondary">From<strong class="text-dark fs-5 ps-1">$88.00</strong></p>
+                                                    <p class="m-0 p-0 text-secondary">Per night</p>
+                                                </div>
+                                                <div class="col-6 justify-content-end d-flex align-items-center">
+                                                    <p class="m-0 p-0 text-secondary">See details<i class="la la-angle-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-4">
+                                <div class="row m-0 p-0">
+                                    <div class=" WishListItem card m-0 p-0 border-0">
+                                        <div class="upper col-12 m-0 p-0 rounded-2 overflow-hidden">
+                                            <div class="bestseller position-absolute w-auto bg-success rounded-pill p-2 ">
+                                                <p class="m-0 p-0 text-light w-auto">BESTSELLER</p>
+                                            </div>
+                                            <div class="addWishlist position-absolute  p-0 m-0">
+                                                <i class="la la-heart p-2 m-0 rounded-circle bg-light "></i>
+                                            </div>
+                                            <img src="./images/img1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="lower col-12 p-3">
+                                            <h3 class="fs-5 m-0 p-0">The Milennium Hilton New York</h3>
+                                            <p class="m-0 p-0 text-secondary">124 E Huron St,New york</p>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="w-auto bg-warning rounded-2 p-0 ps-1 pe-1">
+                                                    <p class="p-0 m-0 text-light"> 4.4/5</p>
+                                                </div>
+                                                <p class="w-auto m-0 p-0 text-warning ps-2">Average</p>
+                                                <p class="w-auto m-0 p-0 text-secondary ps-2">(30 Reviews)</p>
+                                            </div>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="col-6 p-0 m-0">
+                                                    <p class="m-0 p-0 w-auto text-secondary">From<strong class="text-dark fs-5 ps-1">$88.00</strong></p>
+                                                    <p class="m-0 p-0 text-secondary">Per night</p>
+                                                </div>
+                                                <div class="col-6 justify-content-end d-flex align-items-center">
+                                                    <p class="m-0 p-0 text-secondary">See details<i class="la la-angle-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row m-0 p-0 pt-5">
+                            <div class="col-4">
+                                <div class="row m-0 p-0">
+                                    <div class=" WishListItem card m-0 p-0 border-0">
+                                        <div class="upper col-12 m-0 p-0 rounded-2 overflow-hidden">
+                                            <div class="bestseller position-absolute w-auto bg-success rounded-pill p-2 ">
+                                                <p class="m-0 p-0 text-light w-auto">BESTSELLER</p>
+                                            </div>
+                                            <div class="addWishlist position-absolute  p-0 m-0">
+                                                <i class="la la-heart p-2 m-0 rounded-circle bg-light "></i>
+                                            </div>
+                                            <img src="./images/img1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="lower col-12 p-3">
+                                            <h3 class="fs-5 m-0 p-0">The Milennium Hilton New York</h3>
+                                            <p class="m-0 p-0 text-secondary">124 E Huron St,New york</p>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="w-auto bg-warning rounded-2 p-0 ps-1 pe-1">
+                                                    <p class="p-0 m-0 text-light"> 4.4/5</p>
+                                                </div>
+                                                <p class="w-auto m-0 p-0 text-warning ps-2">Average</p>
+                                                <p class="w-auto m-0 p-0 text-secondary ps-2">(30 Reviews)</p>
+                                            </div>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="col-6 p-0 m-0">
+                                                    <p class="m-0 p-0 w-auto text-secondary">From<strong class="text-dark fs-5 ps-1">$88.00</strong></p>
+                                                    <p class="m-0 p-0 text-secondary">Per night</p>
+                                                </div>
+                                                <div class="col-6 justify-content-end d-flex align-items-center">
+                                                    <p class="m-0 p-0 text-secondary">See details<i class="la la-angle-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-4">
+                                <div class="row m-0 p-0">
+                                    <div class=" WishListItem card m-0 p-0 border-0">
+                                        <div class="upper col-12 m-0 p-0 rounded-2 overflow-hidden">
+                                            <div class="bestseller position-absolute w-auto bg-success rounded-pill p-2 ">
+                                                <p class="m-0 p-0 text-light w-auto">BESTSELLER</p>
+                                            </div>
+                                            <div class="addWishlist position-absolute  p-0 m-0">
+                                                <i class="la la-heart p-2 m-0 rounded-circle bg-light "></i>
+                                            </div>
+                                            <img src="./images/img1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="lower col-12 p-3">
+                                            <h3 class="fs-5 m-0 p-0">The Milennium Hilton New York</h3>
+                                            <p class="m-0 p-0 text-secondary">124 E Huron St,New york</p>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="w-auto bg-warning rounded-2 p-0 ps-1 pe-1">
+                                                    <p class="p-0 m-0 text-light"> 4.4/5</p>
+                                                </div>
+                                                <p class="w-auto m-0 p-0 text-warning ps-2">Average</p>
+                                                <p class="w-auto m-0 p-0 text-secondary ps-2">(30 Reviews)</p>
+                                            </div>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="col-6 p-0 m-0">
+                                                    <p class="m-0 p-0 w-auto text-secondary">From<strong class="text-dark fs-5 ps-1">$88.00</strong></p>
+                                                    <p class="m-0 p-0 text-secondary">Per night</p>
+                                                </div>
+                                                <div class="col-6 justify-content-end d-flex align-items-center">
+                                                    <p class="m-0 p-0 text-secondary">See details<i class="la la-angle-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-4">
+                                <div class="row m-0 p-0">
+                                    <div class=" WishListItem card m-0 p-0 border-0">
+                                        <div class="upper col-12 m-0 p-0 rounded-2 overflow-hidden">
+                                            <div class="bestseller position-absolute w-auto bg-success rounded-pill p-2 ">
+                                                <p class="m-0 p-0 text-light w-auto">BESTSELLER</p>
+                                            </div>
+                                            <div class="addWishlist position-absolute  p-0 m-0">
+                                                <i class="la la-heart p-2 m-0 rounded-circle bg-light "></i>
+                                            </div>
+                                            <img src="./images/img1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="lower col-12 p-3">
+                                            <h3 class="fs-5 m-0 p-0">The Milennium Hilton New York</h3>
+                                            <p class="m-0 p-0 text-secondary">124 E Huron St,New york</p>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="w-auto bg-warning rounded-2 p-0 ps-1 pe-1">
+                                                    <p class="p-0 m-0 text-light"> 4.4/5</p>
+                                                </div>
+                                                <p class="w-auto m-0 p-0 text-warning ps-2">Average</p>
+                                                <p class="w-auto m-0 p-0 text-secondary ps-2">(30 Reviews)</p>
+                                            </div>
+                                            <div class="row m-0 p-0 pt-2">
+                                                <div class="col-6 p-0 m-0">
+                                                    <p class="m-0 p-0 w-auto text-secondary">From<strong class="text-dark fs-5 ps-1">$88.00</strong></p>
+                                                    <p class="m-0 p-0 text-secondary">Per night</p>
+                                                </div>
+                                                <div class="col-6 justify-content-end d-flex align-items-center">
+                                                    <p class="m-0 p-0 text-secondary">See details<i class="la la-angle-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="row m-0 p-0 ps-3 align-items-center justify-content-center mt-3 pb-5">
+                <div class="col-12">
+                    <div class=" pagenation row m-0 p-0">
+                        <div class="col-2 w-auto rounded-circle p-2 m-0 ms-1 d-flex align-items-center justify-content-center">
+                            <i class="la la-angle-left p-0 m-0 text-primary fs-4 "></i>
+                        </div>
+                        
+                        <div class="w-auto rounded-circle  m-0 ms-1  p-2 ps-3 pe-3 d-flex align-items-center justify-content-center">
+                            <p class="m-0 p-0 text-primary">1</p>
+                        </div>
+                        <div class=" w-auto rounded-circle  m-0 ms-1  p-2 ps-3 pe-3 d-flex align-items-center justify-content-center">
+                            <p class="m-0 p-0 text-primary">2</p>
+                        </div>
+                        <div class=" w-auto rounded-circle  m-0 ms-1  p-2 ps-3 pe-3 d-flex align-items-center justify-content-center">
+                            <p class="m-0 p-0 text-primary">3</p>
+                        </div>
+                        <div class=" w-auto rounded-circle  m-0 ms-1  p-2  d-flex align-items-center justify-content-center">
+                            <i class="la la-angle-right p-0 m-0 text-primary fs-4"></i>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/masking-input.js" data-autoinit="true"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
