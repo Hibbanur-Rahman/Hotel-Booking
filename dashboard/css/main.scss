@@ -77,13 +77,22 @@
         height: 50px;
         width: 50px;
         border-radius: 50% !important;
-
+        cursor: pointer;
         img {
             height: 80px;
             width: 80px;
         }
     }
-
+    .profileToolPit{
+        right: 40px;
+        top: 95px;
+        .card{
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);  
+            li:hover{
+                background-color: #e0dede;
+            }
+        }
+    }
     .breadcrumb {
         background-color: #0a465c1a;
     }
@@ -367,3 +376,4 @@
         }
     }
 }
+

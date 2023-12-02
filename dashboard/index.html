@@ -30,7 +30,8 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
@@ -111,8 +112,43 @@
                                 <p class="p-0 m-0">5</p>
                             </div>
                         </div>
-                        <div class="profileImg rounded-5 overflow-hidden col-4 p-0 d-flex">
-                            <img src="./images/userImg.jpg" alt="" />
+                        <div class="profileImg profileImgLeft rounded-5 overflow-hidden col-4 p-0 d-flex">
+                            <img src="./images/userImg.jpg" alt="" />                           
+                        </div>
+                        <div class="profileToolPit col-2 position-absolute m-0 p-0 z-1 d-none">
+                            <div class="card m-0 pt-2 w-auto border-0 overflow-hidden">
+                                <p class="m-0 p-0 fs-5 fw-bold text-secondary ps-3">WELCOME!</p>
+                                <li class="list-unstyled  p-0  ">
+                                    <a href="" class="text-decoration-none ps-4 pt-3 pb-3 m-0  text-dark d-flex align-items-center"> 
+                                        <i class="la la-user text-dark fs-4"></i>
+                                        <p class="m-0 p-0 w-auto ps-2 fs-6">My Profile</p>
+                                    </a>
+                                </li>
+                                <li class="list-unstyled  p-0  ">
+                                    <a href="" class="text-decoration-none ps-4 pt-3 pb-3 m-0  text-dark d-flex align-items-center"> 
+                                        <i class="la la-shopping-cart ext-dark fs-4"></i>
+                                        <p class="m-0 p-0 w-auto ps-2 fs-6">My Booking</p>
+                                    </a>
+                                </li>
+                                <li class="list-unstyled  p-0  ">
+                                    <a href="" class="text-decoration-none ps-4 pt-3 pb-3 m-0  text-dark d-flex align-items-center"> 
+                                        <i class="la la-heart text-dark fs-4"></i>
+                                        <p class="m-0 p-0 w-auto ps-2 fs-6">My Reviews</p>
+                                    </a>
+                                </li>
+                                <li class="list-unstyled  p-0  ">
+                                    <a href="" class="text-decoration-none ps-4 pt-3 pb-3 m-0  text-dark d-flex align-items-center"> 
+                                        <i class="la la-gear text-dark fs-4"></i>
+                                        <p class="m-0 p-0 w-auto ps-2 fs-6">Settings</p>
+                                    </a>
+                                </li>
+                                <li class="list-unstyled  p-0  ">
+                                    <a href="" class="text-decoration-none ps-4 pt-3 pb-3 m-0  text-dark d-flex align-items-center"> 
+                                        <i class="la la-power-off text-dark fs-4"></i>
+                                        <p class="m-0 p-0 w-auto ps-2 fs-6">Logout</p>
+                                    </a>
+                                </li>
+                            </div>
                         </div>
                         <p class="p-0 m-0 ps-3 text-light">Hibbanur Rahman</p>
                     </div>
@@ -148,158 +184,181 @@
                 <div class="col-12">
                     <div class="card mainReviewsList p-2 border-0 pb-4">
                         <div class="row m-0 p-0 pb-2 ">
-                             <h3 class="fs-5">Reviews</h3>
-                             <p class="text-secondary">Showing 1-6 of 28 results</p>
+                            <h3 class="fs-5">Reviews</h3>
+                            <p class="text-secondary">Showing 1-6 of 28 results</p>
                         </div>
-                        <div class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
+                        <div
+                            class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
                             <div class="col-3 w-auto overflow-hidden d-flex align-items-center justify-content-start">
-                                <img src="./images/userImg.jpg" alt=""  class="rounded-circle">
+                                <img src="./images/userImg.jpg" alt="" class="rounded-circle">
                             </div>
                             <div class="col-10 m-0 p-0 ps-3">
                                 <h3 class="fs-6 m-0 p-0 fw-bold">Grand Plaza Serviced Apartments</h3>
                                 <div class="ratingStar row m-0 p-0 align-items-center">
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
 
-                                        <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
+                                    <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
                                 </div>
                                 <p class="text-secondary m-0 pt-3">
-                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults with kitchen facilities. The cleaning services were superp. We liked the laundry and kitchen cleaning services on top of the regular cleaning services.
+                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults
+                                    with kitchen facilities. The cleaning services were superp. We liked the laundry and
+                                    kitchen cleaning services on top of the regular cleaning services.
                                 </p>
                             </div>
                         </div>
-                        <div class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
+                        <div
+                            class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
                             <div class="col-3 w-auto overflow-hidden d-flex align-items-center justify-content-start">
-                                <img src="./images/userImg.jpg" alt=""  class="rounded-circle">
+                                <img src="./images/userImg.jpg" alt="" class="rounded-circle">
                             </div>
                             <div class="col-10 m-0 p-0 ps-3">
                                 <h3 class="fs-6 m-0 p-0 fw-bold">Grand Plaza Serviced Apartments</h3>
                                 <div class="ratingStar row m-0 p-0 align-items-center">
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
 
-                                        <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
+                                    <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
                                 </div>
                                 <p class="text-secondary m-0 pt-3">
-                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults with kitchen facilities. The cleaning services were superp. We liked the laundry and kitchen cleaning services on top of the regular cleaning services.
+                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults
+                                    with kitchen facilities. The cleaning services were superp. We liked the laundry and
+                                    kitchen cleaning services on top of the regular cleaning services.
                                 </p>
                             </div>
                         </div>
-                        <div class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
+                        <div
+                            class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
                             <div class="col-3 w-auto overflow-hidden d-flex align-items-center justify-content-start">
-                                <img src="./images/userImg.jpg" alt=""  class="rounded-circle">
+                                <img src="./images/userImg.jpg" alt="" class="rounded-circle">
                             </div>
                             <div class="col-10 m-0 p-0 ps-3">
                                 <h3 class="fs-6 m-0 p-0 fw-bold">Grand Plaza Serviced Apartments</h3>
                                 <div class="ratingStar row m-0 p-0 align-items-center">
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
 
-                                        <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
+                                    <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
                                 </div>
                                 <p class="text-secondary m-0 pt-3">
-                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults with kitchen facilities. The cleaning services were superp. We liked the laundry and kitchen cleaning services on top of the regular cleaning services.
+                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults
+                                    with kitchen facilities. The cleaning services were superp. We liked the laundry and
+                                    kitchen cleaning services on top of the regular cleaning services.
                                 </p>
                             </div>
                         </div>
-                        <div class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
+                        <div
+                            class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
                             <div class="col-3 w-auto overflow-hidden d-flex align-items-center justify-content-start">
-                                <img src="./images/userImg.jpg" alt=""  class="rounded-circle">
+                                <img src="./images/userImg.jpg" alt="" class="rounded-circle">
                             </div>
                             <div class="col-10 m-0 p-0 ps-3">
                                 <h3 class="fs-6 m-0 p-0 fw-bold">Grand Plaza Serviced Apartments</h3>
                                 <div class="ratingStar row m-0 p-0 align-items-center">
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
 
-                                        <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
+                                    <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
                                 </div>
                                 <p class="text-secondary m-0 pt-3">
-                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults with kitchen facilities. The cleaning services were superp. We liked the laundry and kitchen cleaning services on top of the regular cleaning services.
+                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults
+                                    with kitchen facilities. The cleaning services were superp. We liked the laundry and
+                                    kitchen cleaning services on top of the regular cleaning services.
                                 </p>
                             </div>
                         </div>
-                        <div class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
+                        <div
+                            class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
                             <div class="col-3 w-auto overflow-hidden d-flex align-items-center justify-content-start">
-                                <img src="./images/userImg.jpg" alt=""  class="rounded-circle">
+                                <img src="./images/userImg.jpg" alt="" class="rounded-circle">
                             </div>
                             <div class="col-10 m-0 p-0 ps-3">
                                 <h3 class="fs-6 m-0 p-0 fw-bold">Grand Plaza Serviced Apartments</h3>
                                 <div class="ratingStar row m-0 p-0 align-items-center">
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
 
-                                        <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
+                                    <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
                                 </div>
                                 <p class="text-secondary m-0 pt-3">
-                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults with kitchen facilities. The cleaning services were superp. We liked the laundry and kitchen cleaning services on top of the regular cleaning services.
+                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults
+                                    with kitchen facilities. The cleaning services were superp. We liked the laundry and
+                                    kitchen cleaning services on top of the regular cleaning services.
                                 </p>
                             </div>
                         </div>
-                        <div class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
+                        <div
+                            class="reviewsItem row m-0 p-0 pb-4 pt-4 border border-bottom-0 border-start-0 border-end-0">
                             <div class="col-3 w-auto overflow-hidden d-flex align-items-center justify-content-start">
-                                <img src="./images/userImg.jpg" alt=""  class="rounded-circle">
+                                <img src="./images/userImg.jpg" alt="" class="rounded-circle">
                             </div>
                             <div class="col-10 m-0 p-0 ps-3">
                                 <h3 class="fs-6 m-0 p-0 fw-bold">Grand Plaza Serviced Apartments</h3>
                                 <div class="ratingStar row m-0 p-0 align-items-center">
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
-                                        <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
+                                    <i class="la la-star text-warning w-auto m-0 p-0"></i>
 
-                                        <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
+                                    <p class="m-0 p-0 ps-2 text-secondary w-auto">April 5,2021</p>
                                 </div>
                                 <p class="text-secondary m-0 pt-3">
-                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults with kitchen facilities. The cleaning services were superp. We liked the laundry and kitchen cleaning services on top of the regular cleaning services.
+                                    Our stay was pleasant and welcoming. We stayed in an apartment meant for 3 adults
+                                    with kitchen facilities. The cleaning services were superp. We liked the laundry and
+                                    kitchen cleaning services on top of the regular cleaning services.
                                 </p>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
-               
+
             </div>
 
             <div class="row m-0 p-0 ps-3 align-items-center justify-content-center mt-3 pb-5">
                 <div class="col-12">
                     <div class=" pagenation row m-0 p-0">
-                        <div class="col-2 w-auto rounded-circle p-2 m-0 ms-1 d-flex align-items-center justify-content-center">
+                        <div
+                            class="col-2 w-auto rounded-circle p-2 m-0 ms-1 d-flex align-items-center justify-content-center">
                             <i class="la la-angle-left p-0 m-0 text-primary fs-4 "></i>
                         </div>
-                        
-                        <div class="w-auto rounded-circle  m-0 ms-1  p-2 ps-3 pe-3 d-flex align-items-center justify-content-center">
+
+                        <div
+                            class="w-auto rounded-circle  m-0 ms-1  p-2 ps-3 pe-3 d-flex align-items-center justify-content-center">
                             <p class="m-0 p-0 text-primary">1</p>
                         </div>
-                        <div class=" w-auto rounded-circle  m-0 ms-1  p-2 ps-3 pe-3 d-flex align-items-center justify-content-center">
+                        <div
+                            class=" w-auto rounded-circle  m-0 ms-1  p-2 ps-3 pe-3 d-flex align-items-center justify-content-center">
                             <p class="m-0 p-0 text-primary">2</p>
                         </div>
-                        <div class=" w-auto rounded-circle  m-0 ms-1  p-2 ps-3 pe-3 d-flex align-items-center justify-content-center">
+                        <div
+                            class=" w-auto rounded-circle  m-0 ms-1  p-2 ps-3 pe-3 d-flex align-items-center justify-content-center">
                             <p class="m-0 p-0 text-primary">3</p>
                         </div>
-                        <div class=" w-auto rounded-circle  m-0 ms-1  p-2  d-flex align-items-center justify-content-center">
+                        <div
+                            class=" w-auto rounded-circle  m-0 ms-1  p-2  d-flex align-items-center justify-content-center">
                             <i class="la la-angle-right p-0 m-0 text-primary fs-4"></i>
                         </div>
                     </div>
-                   
+
                 </div>
-                
+
             </div>
         </div>
     </div>

@@ -57,10 +57,21 @@
   height: 50px;
   width: 50px;
   border-radius: 50% !important;
+  cursor: pointer;
 }
 .contents .profileImg img {
   height: 80px;
   width: 80px;
+}
+.contents .profileToolPit {
+  right: 40px;
+  top: 95px;
+}
+.contents .profileToolPit .card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.contents .profileToolPit .card li:hover {
+  background-color: #e0dede;
 }
 .contents .breadcrumb {
   background-color: rgba(10, 70, 92, 0.1019607843);
