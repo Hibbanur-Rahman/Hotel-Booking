@@ -230,4 +230,36 @@
   outline: none;
 }
 
+.mainWishlist {
+  margin-top: -60px !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.mainWishlist .WishListItem {
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.mainWishlist .WishListItem:hover {
+  margin-top: -10px !important;
+  transition: all 0.4s ease-in-out;
+}
+.mainWishlist .WishListItem .upper .bestseller {
+  left: 20px;
+  top: -10px;
+}
+.mainWishlist .WishListItem .upper .bestseller p {
+  font-size: 13px !important;
+  line-height: 13px;
+}
+.mainWishlist .WishListItem .upper .addWishlist {
+  right: 13px;
+  top: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.mainWishlist .WishListItem .upper .addWishlist :hover {
+  transition: all 0.4s ease-in-out;
+  background: #0964b0 !important;
+  color: white;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */

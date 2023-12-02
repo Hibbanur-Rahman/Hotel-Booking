@@ -36,35 +36,43 @@
         }
     }
 }
-.contents{
-    .upperNav{
+
+.contents {
+    .upperNav {
         border-bottom: 0.2px solid rgba(97, 20, 231, 0.34);
-        .left{
-            img{
+
+        .left {
+            img {
                 width: 80px;
                 height: 80px;
             }
         }
-        .notification{
-            background-color:#0a465c1a;
+
+        .notification {
+            background-color: #0a465c1a;
             height: 40px;
             width: 40px;
-            i{
+
+            i {
                 color: white;
             }
-            div{
+
+            div {
                 border-radius: 50%;
                 height: 20px;
                 width: 20px;
                 box-sizing: border-box;
-                p{
+
+                p {
                     font-size: 12px;
                 }
+
                 margin-top: -40px;
                 margin-right: -20px;
             }
         }
     }
+
     .profileImg {
         height: 50px;
         width: 50px;
@@ -75,79 +83,95 @@
             width: 80px;
         }
     }
-    .breadcrumb{
+
+    .breadcrumb {
         background-color: #0a465c1a;
     }
-    
-    .infoList{
+
+    .infoList {
         padding-bottom: 200px !important;
-        .card{
-            p:nth-child(1){
+
+        .card {
+            p:nth-child(1) {
                 color: grey;
             }
-            p:nth-child(2){
+
+            p:nth-child(2) {
                 font-weight: 600;
                 font-size: 23px;
             }
         }
-        .icon{
+
+        .icon {
             height: 60px;
             width: 60px;
             transform: scale(1);
             transition: all 0.4s ease-in-out;
-            i{
+
+            i {
                 font-size: 25px;
             }
         }
-        .icon:hover{
+
+        .icon:hover {
             transform: scale(1.1);
             transition: all 0.4s ease-in-out;
         }
     }
 
-    .NotificationList{
-        .iconCheckbox{
+    .NotificationList {
+        .iconCheckbox {
             width: 40px;
             height: 40px;
             background-color: rgb(226, 226, 226);
-            i{
+
+            i {
                 font-size: 24px;
                 color: rgb(59, 59, 59);
             }
         }
-        .icon{
+
+        .icon {
             width: 50px;
             height: 50px;
         }
-        .card{
+
+        .card {
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 background-color: rgba(84, 247, 231, 0.223);
-                .listCheckBox{
-                    display:flex !important;
+
+                .listCheckBox {
+                    display: flex !important;
                 }
             }
         }
-        .listCheckBox{
+
+        .listCheckBox {
             display: none !important;
         }
     }
 }
-.messageAlert{
-    i{
+
+.messageAlert {
+    i {
         font-size: 25px;
     }
 }
-.paymentDetails{
-    .btn{
+
+.paymentDetails {
+    .btn {
         height: 40px !important;
         display: none !important;
         transition: all 0.4s ease-in-out;
     }
-    .row{
+
+    .row {
         cursor: pointer;
-        &:hover{
-            .btn{
+
+        &:hover {
+            .btn {
                 display: flex !important;
                 transition: all 0.4s ease-in-out;
             }
@@ -155,43 +179,48 @@
         }
     }
 }
-.bookingTable{
+
+.bookingTable {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin-top: -60px !important;
 
 }
 
-.profileInfoCard{
+.profileInfoCard {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin-top: -60px !important;
 }
 
 
-.personalInformation{
+.personalInformation {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin-top: -60px !important;
-    img{
+
+    img {
         width: 150px;
         height: 150px;
     }
-    input:focus{
+
+    input:focus {
         outline: none;
     }
-    input::placeholder{
+
+    input::placeholder {
         color: black;
     }
-    .uploadFile{
+
+    .uploadFile {
         input[type="file"] {
             position: relative;
-          }
-          
-          input[type="file"]::file-selector-button {
+        }
+
+        input[type="file"]::file-selector-button {
             width: 136px;
             color: transparent;
-          }
-          
-          /* Faked label styles and icon */
-          input[type="file"]::before {
+        }
+
+        /* Faked label styles and icon */
+        input[type="file"]::before {
             position: absolute;
             pointer-events: none;
             top: 10px;
@@ -200,21 +229,21 @@
             width: 20px;
             content: "";
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
-          }
-          
-          input[type="file"]::after {
+        }
+
+        input[type="file"]::after {
             position: absolute;
             pointer-events: none;
             top: 11px;
             left: 40px;
             color: #0964b0;
             content: "Upload File";
-          }
-          
-          /* ------- From Step 1 ------- */
-          
-          /* file upload button */
-          input[type="file"]::file-selector-button {
+        }
+
+        /* ------- From Step 1 ------- */
+
+        /* file upload button */
+        input[type="file"]::file-selector-button {
             border-radius: 4px;
             padding: 0 16px;
             height: 40px;
@@ -224,39 +253,85 @@
             box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
             margin-right: 16px;
             transition: background-color 200ms;
-          }
-          
-          /* file upload button hover state */
-          input[type="file"]::file-selector-button:hover {
+        }
+
+        /* file upload button hover state */
+        input[type="file"]::file-selector-button:hover {
             background-color: #f3f4f6;
-          }
-          
-          /* file upload button active state */
-          input[type="file"]::file-selector-button:active {
+        }
+
+        /* file upload button active state */
+        input[type="file"]::file-selector-button:active {
             background-color: #e5e7eb;
-          }
-          
+        }
+
     }
 }
-.changeEmail{
+
+.changeEmail {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin-top: -60px !important;
-    input:focus{
+
+    input:focus {
         outline: none;
     }
-    input::placeholder{
+
+    input::placeholder {
         color: black;
     }
 }
-.changePassword{
+
+.changePassword {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    input:focus{
+
+    input:focus {
         outline: none;
     }
 }
-.forgotPassword{
+
+.forgotPassword {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    input:focus{
+
+    input:focus {
         outline: none;
+    }
+}
+
+.mainWishlist {
+    margin-top: -60px !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    .WishListItem {
+        transition: all 0.4s ease-in-out;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        &:hover {
+            margin-top: -10px !important;
+            transition: all 0.4s ease-in-out;
+        }
+    
+        .upper {
+            .bestseller {
+                left: 20px;
+                top: -10px;
+    
+                p {
+                    font-size: 13px !important;
+                    line-height: 13px;
+                }
+            }
+    
+            .addWishlist {
+                right: 13px;
+                top: 20px;
+                transition: all 0.4s ease-in-out;
+                :hover {
+                    transition: all 0.4s ease-in-out;
+                    background: #0964b0 !important;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+    
     }
 }
