@@ -93,4 +93,24 @@
   font-size: 14px;
 }
 
+.addListingMain {
+  margin-top: -90px !important;
+}
+.addListingMain .card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.addListingMain .card input:focus {
+  outline: none;
+}
+.addListingMain .card textarea {
+  resize: none;
+}
+.addListingMain .card textarea:focus {
+  box-shadow: none;
+  border-color: rgb(228, 228, 228);
+}
+.addListingMain .card iframe {
+  height: 300px !important;
+}
+
 /*# sourceMappingURL=style.css.map */

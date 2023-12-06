@@ -117,3 +117,22 @@
     }
     
 }
+.addListingMain{
+    margin-top: -90px !important;
+    .card{
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        input:focus{
+            outline: none;
+        }
+        textarea{
+           resize: none;
+        }
+        textarea:focus{
+            box-shadow: none;
+            border-color: rgb(228, 228, 228);
+        }
+        iframe{
+            height: 300px !important;
+        }
+    }
+}
