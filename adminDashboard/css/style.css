@@ -112,5 +112,60 @@
 .addListingMain .card iframe {
   height: 300px !important;
 }
+.addListingMain .ImageGallery .card {
+  height: 20vh !important;
+}
+.addListingMain .ImageGallery .uploadFile {
+  /* Faked label styles and icon */
+  /* ------- From Step 1 ------- */
+  /* file upload button */
+  /* file upload button hover state */
+  /* file upload button active state */
+}
+.addListingMain .ImageGallery .uploadFile input[type=file] {
+  position: relative;
+}
+.addListingMain .ImageGallery .uploadFile input[type=file]::file-selector-button {
+  width: 100% !important;
+  height: 100% !important;
+  color: transparent;
+}
+.addListingMain .ImageGallery .uploadFile input[type=file]::before {
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 16px;
+  height: 150px;
+  width: 150px;
+  content: "";
+  background-image: url("../images/upload-icon.png");
+  background-size: cover;
+  background-position: center;
+}
+.addListingMain .ImageGallery .uploadFile input[type=file]::after {
+  position: absolute;
+  pointer-events: none;
+  top: 11px;
+  left: 40px;
+  color: #0964b0;
+  content: "";
+}
+.addListingMain .ImageGallery .uploadFile input[type=file]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+.addListingMain .ImageGallery .uploadFile input[type=file]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+.addListingMain .ImageGallery .uploadFile input[type=file]::file-selector-button:active {
+  background-color: #e5e7eb;
+}
 
 /*# sourceMappingURL=style.css.map */
