@@ -137,11 +137,16 @@
     }
     .ImageGallery{
         .card{
-            height: 20vh !important;
+            height: 25vh !important;
+            // img{
+                
+            // }
         }
         .uploadFile{
             input[type="file"] {
                 position: relative;
+                background: transparent;
+                border: 0px !important;
               }
               
               input[type="file"]::file-selector-button {
@@ -159,7 +164,7 @@
                 height: 150px;
                 width: 150px;
                 content: "";
-                background-image: url("../images/upload-icon.png");
+                // background-image: url("../images/upload-icon.png");
                 background-size: cover;
                 background-position:center;
               }
@@ -177,7 +182,7 @@
               
               /* file upload button */
               input[type="file"]::file-selector-button {
-                border-radius: 4px;
+                border-radius: 10px;
                 padding: 0 16px;
                 height: 40px;
                 cursor: pointer;

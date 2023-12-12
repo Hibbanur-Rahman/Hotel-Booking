@@ -113,7 +113,7 @@
   height: 300px !important;
 }
 .addListingMain .ImageGallery .card {
-  height: 20vh !important;
+  height: 25vh !important;
 }
 .addListingMain .ImageGallery .uploadFile {
   /* Faked label styles and icon */
@@ -124,6 +124,8 @@
 }
 .addListingMain .ImageGallery .uploadFile input[type=file] {
   position: relative;
+  background: transparent;
+  border: 0px !important;
 }
 .addListingMain .ImageGallery .uploadFile input[type=file]::file-selector-button {
   width: 100% !important;
@@ -138,7 +140,6 @@
   height: 150px;
   width: 150px;
   content: "";
-  background-image: url("../images/upload-icon.png");
   background-size: cover;
   background-position: center;
 }
@@ -151,7 +152,7 @@
   content: "";
 }
 .addListingMain .ImageGallery .uploadFile input[type=file]::file-selector-button {
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 0 16px;
   height: 40px;
   cursor: pointer;
