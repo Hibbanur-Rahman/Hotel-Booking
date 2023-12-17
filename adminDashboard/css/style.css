@@ -248,4 +248,14 @@
   background-color: #e5e7eb;
 }
 
+.walletContent {
+  margin-top: -60px !important;
+}
+.walletContent .card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.walletContent .card i {
+  font-size: 60px !important;
+}
+
 /*# sourceMappingURL=style.css.map */
