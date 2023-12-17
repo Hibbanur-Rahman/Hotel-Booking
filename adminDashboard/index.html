@@ -87,13 +87,13 @@
                     </a>
                 </li>
                 <li class="wallet nav-item">
-                    <a href="#" class="nav-link text-dark">
+                    <a href="#" class="nav-link text-light active">
                         <i class="bi bi-wallet me-2"></i>
                         Wallet
                     </a>
                 </li>
                 <li class="setting nav-item">
-                    <a href="#" class="nav-link text-light active">
+                    <a href="#" class="nav-link text-dark">
                         <i class="bi bi-gear me-2"></i> Settings
                     </a>
                 </li>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="lowerNav row m-0 p-0 d-flex align-items-center p-4 pb-5">
                     <div class="col-6 d-flex align-items-center">
-                        <h2 class="text-light p-0 m-0">My Booking</h2>
+                        <h2 class="text-light p-0 m-0">My Wallet</h2>
                     </div>
                     <div class="breadcrumb_items col-6 d-flex align-items-center justify-content-end">
                         <nav class="w-auto" style="
@@ -189,258 +189,37 @@
                                     <a href="#" class="text-light">Dashboard</a>
                                 </li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">
-                                    MyBooking
+                                    My wallet
                                 </li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
-            <div class="personalData row m-0 p-0">
-                <!-- ====================  change personal data ================== -->
 
-                <div class="col-6">
-                    <div class="card personalInformation border-0">
-                        <div class="row m-0 p-3 border border-top-0 border-start-0 border-end-0">
-                            <h3 class="m-0 p-0 fs-5">Personal Information</h3>
-                        </div>
-                        <div class="row m-0 p-3 ">
-                            <div class="col-3 rounded-1 overflow-hidden p-0">
-                                <img src="./images/userImg.jpg" alt="" class="imgPreviewProfile rounded-2 img-fluid">
-                            </div>
-                            <div class="col-9 d-flex flex-column ps-4">
-                                <p>Max file size is 5MB ,Minimum Dimension :150x150 And Suitable files are .jpg & .png
-                                </p>
-                                <div class="inputField uploadFile row p-0 m-0">
-                                    <input type="file" id="profilePhotoUpload" accept=".png,.jpg,.jpeg"
-                                        class="m-0 w-auto p-0">
-                                </div>
-                                <div class="row m-0 p-0">
-                                    <button class="btn btn-primary w-auto mt-2 p-2">Remove Image</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row m-0 p-3">
-                            <form action="/personalInformation" method="post" class="m-0 p-0">
-                                <div class="row m-0 p-0">
-                                    <div class="col-12 p-0 m-0 pt-4">
-                                        <p class="m-0 p-0 pb-2">First Name</p>
-                                        <div class="inputField m-0 p-0 row">
-                                            <i class="las la-user position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input type="text"
-                                                class="p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="<%= user.firstName%>">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 p-0 m-0 pt-4">
-                                        <p class="m-0 p-0 pb-2">Last Name</p>
-                                        <div class="inputField row p-0 m-0">
-                                            <i class="las la-user position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input type="text"
-                                                class="p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="<%= user.lastName%>">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0 p-0">
-                                    <div class="col-12 p-0 m-0 pt-4">
-                                        <p class="m-0 p-0 pb-2">Email Address</p>
-                                        <div class="inputField row m-0 p-0">
-                                            <i class="las la-envelope position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input type="text"
-                                                class="p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="<%= user.email%>">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 p-0 m-0 pt-4">
-                                        <p class="m-0 p-0 pb-2">Phone number</p>
-                                        <div class="inputField row m-0 p-0">
-                                            <i class="las la-phone position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input id="phone" type="text"
-                                                class="p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="+91 99731 52523">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0 p-0">
-                                    <div class="col-12 p-0 m-0 pt-4">
-                                        <p class="m-0 p-0 pb-2">Date of birth</p>
-                                        <div class="inputField row m-0 p-0">
-                                            <i class="las la-user position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input type="text"
-                                                class=" m-0 p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="11 Nov 2004">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 p-0 m-0  pt-4">
-                                        <p class="m-0 p-0 pb-2">Address</p>
-                                        <div class="inputField row m-0 p-0">
-                                            <i class="las la-map position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input id="phone" type="text" class=" p-2  ps-5 rounded-1 border border-1"
-                                                placeholder="Gacchibowli,Hyderabad">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0 p-0">
-                                    <div class="col-12 p-0 m-0  pt-4">
-                                        <p class="m-0 p-0 pb-2">Website</p>
-                                        <div class="inputField row m-0 p-0">
-                                            <i class="las la-globe position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input id="phone" type="text" class=" p-2  ps-5 rounded-1 border border-1"
-                                                placeholder="www.hibbanrahman.com">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0 p-0">
-                                    <p class=" m-0 mt-4 p-0 pb-2">Notes</p>
-                                    <textarea name="" id="" cols="30" rows="6" class="form-control p-3"
-                                        placeholder="Describe your self"></textarea>
-                                </div>
-                                <div class="row m-0 p-0">
-                                    <div class="col-12 p-0 m-0 pt-4">
-                                        <p class="m-0 p-0 pb-2">Facebook</p>
-                                        <div class="inputField row m-0 p-0 d-flex align-items-center">
-                                            <i class="fa fa-facebook-f position-absolute fs-5 z-1 m-0  w-auto ps-4"></i>
-                                            <input type="text"
-                                                class=" m-0 p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="www.facebook.com">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 p-0 m-0 pt-4">
-                                        <p class="m-0 p-0 pb-2">Twitter</p>
-                                        <div class="inputField row m-0 p-0 d-flex align-items-center">
-                                            <i class="fa fa-twitter position-absolute fs-5 z-1 m-0  w-auto ps-4"></i>
-                                            <input type="text"
-                                                class=" m-0 p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="www.twitter.com">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 p-0 m-0 pt-4">
-                                        <p class="m-0 p-0 pb-2">Instagram</p>
-                                        <div class="inputField row m-0 p-0 d-flex align-items-center">
-                                            <i class="fa fa-instagram position-absolute fs-5 z-1 m-0  w-auto ps-4"></i>
-                                            <input type="text"
-                                                class=" m-0 p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="www.twitter.com">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
-                            </form>
+            <div class="walletContent container m-0 p-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4">
+                        <div class="card ">
+                            <h1 class="m-0 p-0">94.50</h1>
                         </div>
                     </div>
-
-                </div>
-                <div class="col-6">
-                    <!-- ====================  change Email ================== -->
-                    <div class="card changeEmail m-0 p-0 border-0 mb-5">
-                        <div class="row m-0 p-3 border border-top-0 border-start-0 border-end-0">
-                            <h3 class="m-0 p-0 fs-5">Change Email</h3>
-                        </div>
-                        <div class="row m-0 p-3">
-                            <form action="" class="m-0 p-0">
-                                <div class="row p-0 m-0 pt-2 ">
-                                    <p class="p-0 m-0 pb-2">Current Email</p>
-                                    <div class="inputField row m-0 p-0">
-                                        <i class="las la-envelope position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                        <input type="email" class=" p-2  ps-5 rounded-1 border border-1"
-                                            placeholder="Current email">
-                                    </div>
-                                </div>
-                                <div class="row p-0 m-0 pt-4">
-                                    <p class="p-0 m-0 pb-2">New Email</p>
-                                    <div class="inputField row m-0 p-0">
-                                        <i class="las la-envelope position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                        <input type="email" class=" p-2  ps-5 rounded-1 border border-1"
-                                            placeholder="New email">
-                                    </div>
-                                </div>
-                                <div class="row p-0 m-0 pt-4">
-                                    <p class="p-0 m-0 pb-2">New Email Again</p>
-                                    <div class="inputField row m-0 p-0">
-                                        <i class="las la-envelope position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                        <input type="email" class=" p-2  ps-5 rounded-1 border border-1"
-                                            placeholder="New email again">
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary mt-3">Change Email</button>
-
-                            </form>
+                    <div class="col-4">
+                        <div class="card ">
+                            <h1 class="m-0 p-0">94.50</h1>
                         </div>
                     </div>
-                    <!-- ====================  change password ================== -->
-                    <div class="card m-0 p-0 border-0 changePassword mt-5 mb-5">
-                        <div class="row m-0 p-3 border border-top-0 border-start-0 border-end-0">
-                            <h3 class="m-0 p-0 fs-5">Change Password</h3>
-                        </div>
-                        <div class="row m-0 p-3">
-                            <form action="" class="m-0 p-0">
-                                <div class="row m-0 p-0 pt-4">
-                                    <div class="col-6 p-0 m-0 pe-3">
-                                        <p class="m-0 p-0 pb-2">Current Password</p>
-                                        <div class="inputField m-0 p-0 row">
-                                            <i class="las la-lock position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input type="text"
-                                                class="p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="Current password">
-                                        </div>
-                                    </div>
-                                    <div class="col-6 p-0 m-0 ps-1">
-                                        <p class="m-0 p-0 pb-2">New Password</p>
-                                        <div class="inputField row p-0 m-0">
-                                            <i class="las la-user position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input type="text"
-                                                class="p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="New password">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0 p-0 pt-4">
-                                    <div class="col-6 p-0 m-0 pe-3">
-                                        <p class="m-0 p-0 pb-2">New Password Again</p>
-                                        <div class="inputField m-0 p-0 row">
-                                            <i class="las la-lock position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                            <input type="text"
-                                                class="p-2 position-relative ps-5 rounded-1 border border-1"
-                                                placeholder="New password again">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary mt-3">Change Password</button>
-                            </form>
+                    <div class="col-4">
+                        <div class="card ">
+                            <h1 class="m-0 p-0">94.50</h1>
                         </div>
                     </div>
-                    <!-- ====================  forgot password ================== -->
-                    <div class="card forgotPassword m-0 border-0 p-3  mt-5 mb-5">
-                        <div class="row m-0 p-0">
-                            <h3 class="m-0 p-0 fs-5 pb-3">Forgot Password</h3>
-                            <p class="m-0 p-0 text-secondary">Enter the Email of your account to reset password. Then
-                                you will recieve a link to email</p>
-                            <p class="m-0 p-0 text-secondary">to reset the password if you have any issue about reset
-                                password contact us</p>
-                        </div>
-                        <div class="row m-0 p-0">
-                            <form action="" class="m-0 p-0">
-                                <div class="row p-0 m-0 pt-4">
-                                    <p class="p-0 m-0 pb-2">Email Address</p>
-                                    <div class="inputField row m-0 p-0">
-                                        <i class="las la-envelope position-absolute fs-3 z-1 m-0 mt-2 w-auto"></i>
-                                        <input id="phone" type="text" class=" p-2  ps-5 rounded-1 border border-1"
-                                            placeholder="Enter email address">
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary mt-3">Forgot Password</button>
-
-                            </form>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
-
         </div>
-    </div>
 
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
@@ -448,8 +227,6 @@
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 
     <script src="./js/script.js"></script>
-    <script src="./js/settingUploadPhoto.js"></script>
-
 </body>
 
 </html>
