@@ -28,9 +28,6 @@
     <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
-
-
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
@@ -78,7 +75,7 @@
                     </a>
                 </li>
                 <li class="myListing nav-item">
-                    <a href="#" class="nav-link text-dark">
+                    <a href="#" class="nav-link text-light active">
                         <i class="bi bi-copy me-2"></i>
                         My Listings
                     </a>
@@ -90,7 +87,7 @@
                     </a>
                 </li>
                 <li class="wallet nav-item">
-                    <a href="#" class="nav-link text-light active">
+                    <a href="#" class="nav-link text-dark">
                         <i class="bi bi-wallet me-2"></i>
                         Wallet
                     </a>
@@ -175,7 +172,7 @@
                 </div>
                 <div class="lowerNav row m-0 p-0 d-flex align-items-center p-4 pb-5">
                     <div class="col-6 d-flex align-items-center">
-                        <h2 class="text-light p-0 m-0">My Wallet</h2>
+                        <h2 class="text-light p-0 m-0">My Listing</h2>
                     </div>
                     <div class="breadcrumb_items col-6 d-flex align-items-center justify-content-end">
                         <nav class="w-auto" style="
@@ -192,286 +189,25 @@
                                     <a href="#" class="text-light">Dashboard</a>
                                 </li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">
-                                    My wallet
+                                    My Listing
                                 </li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
-
-            <div class="walletContent container m-0 p-0 p-4 pt-0">
-                <div class="row m-0 p-0">
-                    <div class="col-4">
-                        <div class="card p-2 pt-4 pb-4 border-0">
-                            <div class="row m-0 p-0 align-items-center">
-                                <div class="col-8">
-
-                                    <h1 class="m-0 p-0 w-auto fs-1 fw-bold text-secondary">94.50</h1>
-                                    <p class="m-0 p-0 w-auto text-secondary fs-5"> withdrawal Balance</p>
-                            
-                                </div>
-                                <div class="col-4">
-                                    <i class="bi bi-cash fs-1 text-primary"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card p-2 pt-4 pb-4 border-0">
-                            <div class="row m-0 p-0 align-items-center">
-                                <div class="col-8">
-
-                                    <h1 class="m-0 p-0 w-auto fs-1 fw-bold text-secondary">314.11</h1>
-                                    <p class="m-0 p-0 w-auto text-secondary fs-5"> Total Earning</p>
-                            
-                                </div>
-                                <div class="col-4">
-                                    <i class="bi bi-bag fs-6 text-success"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card p-2 pt-4 pb-4 border-0">
-                            <div class="row m-0 p-0 align-items-center">
-                                <div class="col-8">
-
-                                    <h1 class="m-0 p-0 w-auto fs-1 fw-bold text-secondary">5</h1>
-                                    <p class="m-0 p-0 w-auto text-secondary fs-5"> Total Orders</p>
-                            
-                                </div>
-                                <div class="col-4">
-                                    <i class="bi bi-cart fs-1 text-primary"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                   
-                </div>
-
-                <div class="row m-0 p-0 mt-5 ">
-                    <div class="col-6 p-3">
-                        <div class="card p-3 border-0">
-                            <div class="row m-0 p-0 align-items-center pt-2 pb-2 justify-content-between">
-                                <p class="m-0 p-0 fs-5 fw-bold w-auto">Earnings</p>
-                                <p class="m-0 p-0 text-secondary w-auto">Fee:<span class="m-0 p-0 text-dark">10%</span></p>
-                            </div>
-                            <table id="myTable" class="row-border">
-                                <thead >
-                                    <tr >
-                                        <th>Order ID</th>
-                                        <th>Fee</th>
-                                        <th>Fee</th>
-                                        <th>Net Earning</th>
-                                        <th>Date</th>
-                                    </tr>
-                                </thead>
-                                <tbody > 
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-primary">RA0449</td>
-                                        <td class="text-dark">$89</td>
-                                        <td class="text-danger">$11,50</td>
-                                        <td class="text-success">$80.50</td>
-                                        <td class="text-secondary">05/01/2023</td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-6 p-3">
-                        <div class="card p-3 border-0">
-                            <div class="row m-0 p-0 align-items-center pt-2 pb-2 justify-content-between">
-                                <p class="m-0 p-0 fs-5 fw-bold w-auto">Payout History</p>
-                                <p class="m-0 p-0 text-secondary w-auto">Fee:<span class="m-0 p-0 text-dark">10%</span></p>
-                            </div>
-                            <table id="payOutHistoryTable" class="row-border">
-                                <thead >
-                                    <tr >
-                                        <th>Customer</th>
-                                        <th>Item</th>
-                                        <th>Date</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody > 
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-secondary">Udin Wayang</td>
-                                        <td class="text-secondary">Nasi Padang</td>
-                                        <td class="text-secondary">20/12/23</td>
-                                        <td class=""><button class="btn btn-success m-0 p-1 fs-6" style="font-size: 13px !important;">Paid</button></td>
-                                        <td class=""><button class="btn btn-primary"> Invoice</button></td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
+            <div class="HotelListingMainContent row m-0 p-0 p-4 pt-1">
+                <div class="card">
+                    <div class="row m-0 p-3 align-items-center border border-start-0 border-bottom-1 border-top-0 border-end-0">
+                        <i class="bi bi-file-earmark-fill text-primary w-auto m-0 p-0 pe-2"></i>
+                        <h4 class="fw-bold fs-6 w-auto m-0 p-0">Listing Info</h4>
                     </div>
                 </div>
-
+               
             </div>
         </div>
-
     </div>
+
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
