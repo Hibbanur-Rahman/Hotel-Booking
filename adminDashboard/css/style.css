@@ -80,6 +80,71 @@
   border-color: rgb(215, 213, 213);
   box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25) !important;
 }
+.contents .infoList {
+  padding-bottom: 200px !important;
+}
+.contents .infoList .card p:nth-child(1) {
+  color: grey;
+}
+.contents .infoList .card p:nth-child(2) {
+  font-weight: 600;
+  font-size: 23px;
+}
+.contents .infoList .icon {
+  height: 60px;
+  width: 60px;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.contents .infoList .icon i {
+  font-size: 25px;
+}
+.contents .infoList .icon:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+.contents .NotificationList .iconCheckbox {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(226, 226, 226);
+}
+.contents .NotificationList .iconCheckbox i {
+  font-size: 24px;
+  color: rgb(59, 59, 59);
+}
+.contents .NotificationList .icon {
+  width: 50px;
+  height: 50px;
+}
+.contents .NotificationList .card {
+  cursor: pointer;
+}
+.contents .NotificationList .card:hover {
+  background-color: rgba(84, 247, 231, 0.223);
+}
+.contents .NotificationList .card:hover .listCheckBox {
+  display: flex !important;
+}
+.contents .NotificationList .listCheckBox {
+  display: none !important;
+}
+
+.messageAlert i {
+  font-size: 25px;
+}
+
+.paymentDetails .btn {
+  height: 40px !important;
+  display: none !important;
+  transition: all 0.4s ease-in-out;
+}
+.paymentDetails .row {
+  cursor: pointer;
+}
+.paymentDetails .row:hover .btn {
+  display: flex !important;
+  transition: all 0.4s ease-in-out;
+}
 
 .bookingCard {
   margin-top: -60px !important;
@@ -268,6 +333,15 @@
   width: 50px;
   height: 50px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mainReviewsList {
+  margin-top: -60px !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.mainReviewsList .reviewsItem img {
+  height: 80px;
+  width: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
